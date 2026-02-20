@@ -1,0 +1,54 @@
+\clearpage
+\newpage
+
+\appendix
+\renewcommand{\thesection}{\Alph{section}}
+
+\section*{\centering DOCUMENTOS DE DIRETRIZES}
+\addcontentsline{toc}{section}{DOCUMENTOS DE DIRETRIZES}
+\label{sec:cap-diretrizes}
+
+
+Os documentos de diretrizes a seguir consistem em um conjunto de normas técnicas que estabelecem padrões obrigatórios para o desenvolvimento, implantação e manutenção de sistemas no âmbito da Câmara Legislativa do Distrito Federal, abrangendo arquitetura de software, modelagem e governança de bases de dados relacionais, gestão de configuração (controle de versão, repositórios, versionamento, branches, CI/CD e ambientes Kubernetes) e processos de testes de software (unitários, integração, funcionais e de desempenho), com o objetivo de assegurar padronização tecnológica, qualidade, segurança, rastreabilidade e conformidade dos sistemas institucionais.
+
+
+\begin{env-cinza}
+
+\begin{center}
+	\textbf{Disposição Geral sobre Vigência e Publicação}	
+\end{center}
+
+Aplicam-se, para todos os fins, as versões mais atualizadas dos documentos de diretrizes mencionados nesta seção. 
+
+Os referidos documentos encontram-se disponibilizados no Portal da Câmara Legislativa do Distrito Federal (CLDF), em área específica destinada à governança e normatização de Tecnologia da Informação.
+
+Eventual atualização ou revisão desses documentos produzirá efeitos imediatos no âmbito do Processo de Desenvolvimento Ágil de Software (PDAS), independentemente de alteração formal deste instrumento, desde que regularmente publicada no portal institucional.
+
+
+\end{env-cinza}
+
+
+
+
+
+\subsection*{Diretrizes de Arquitetura de Sistemas}
+
+Estabelecem o padrão tecnológico e arquitetural para o desenvolvimento de sistemas no âmbito da CLDF, definindo tecnologias homologadas para frontend, backend e infraestrutura, padrões de autenticação e autorização, armazenamento, observabilidade e esteira de integração e entrega contínua. As diretrizes asseguram padronização do stack tecnológico, interoperabilidade entre soluções, governança da evolução arquitetural e aderência ao ambiente institucional baseado em contêineres e orquestração.
+
+\subsection*{Diretrizes de Arquitetura de Bases de Dados Relacionais}
+
+Definem normas para modelagem lógica e física de dados, padronização de nomenclatura de objetos, regras de integridade, versionamento de scripts e boas práticas de desempenho e governança. Estabelecem critérios como normalização, uso de chaves primárias sequenciais, constraints, padronização de prefixos e sufixos, além de requisitos de documentação e rastreabilidade, visando garantir qualidade, consistência, segurança e integridade dos dados institucionais.
+
+\subsection*{Diretrizes de Gestão de Configuração}
+
+Dispõem sobre o controle de versão, organização de repositórios, estratégia de branches, versionamento semântico, uso de tags, pull requests, rastreabilidade de commits e padronização da esteira de CI/CD. Regulamentam também a implantação em ambientes segregados (desenvolvimento, homologação, produção, etc.) e a utilização de helm charts para deploy em Kubernetes, assegurando governança, rastreabilidade e controle do ciclo de vida do software.
+
+\subsection*{Diretrizes de Testes}
+
+Estabelecem os tipos de testes obrigatórios e recomendados (unitários, integração, funcionais, desempenho, carga e stress), critérios mínimos de cobertura, ferramentas homologadas e padrões de automação. Definem regras para elaboração de plano de testes, casos de teste, registro de defeitos e evidências, garantindo qualidade, confiabilidade, conformidade normativa e mitigação de riscos antes da promoção de versões para ambientes superiores.
+
+\subsection*{Diretrizes de Projetos e Backlog}
+
+Definem práticas de organização e rastreabilidade de requisitos, histórias de usuário, itens de backlog técnico, registro de defeitos e vinculação entre artefatos de documentação, código-fonte e testes. Estabelecem a obrigatoriedade de vinculação entre entregas, versões e demandas registradas em ferramenta de gestão, assegurando controle de escopo, transparência, governança e alinhamento entre requisitos funcionais e implementação técnica.
+
+

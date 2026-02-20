@@ -1,0 +1,59 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{Brasileiro}{2019}{histuser19}
+Brasileiro, R.  \harvardyearleft 2019\harvardyearright .
+\newblock Veja agora 08 dicas para criar excelentes histórias de usuário,
+  \url{http://www.metodoagil.com/historias-de-usuario/}.
+\newblock Acessado: 18/09/2019.
+
+\harvarditem{Fowler}{2018}{fowler2018}
+Fowler, M.  \harvardyearleft 2018\harvardyearright .
+\newblock {\em Refactoring: improving the design of existing code},
+  Addison-Wesley Professional.
+
+\harvarditem{IPHAN}{2013}{iphan2013}
+IPHAN  \harvardyearleft 2013\harvardyearright .
+\newblock {\em Metodologia Iphan de Gestão de Demandas de Desenvolvimento
+  Ágil de Softwares MIDAS}, 1.0 edn, Instituto do Patrimônio Histórico e
+  Artístico Nacional.
+
+\harvarditem{MP}{2015}{guiaagilsisp2015}
+MP  \harvardyearleft 2015\harvardyearright .
+\newblock {\em Guia de Projetos de Software com práticas de métodos ágeis
+  para o SISP: versão 1.0}, 1.0 edn, Ministério do Planejamento, Orçamento e
+  Gestão, Secretaria de Logística e Tecnologia da Informação, Brasília.
+\newblock 1. Software 2. Tecnologia da Informação 3. Administração
+  Pública.
+
+\harvarditem{MP}{2016}{roteirosisp2016}
+MP  \harvardyearleft 2016\harvardyearright .
+\newblock {\em Roteiro de Métricas de Software do SISP Versão 2.2}, 2.2 edn,
+  Ministério do Planejamento, Desenvolvimento e Gestão, Brasília.
+
+\harvarditem[Prikladnicki et~al.]{Prikladnicki, Willi \harvardand\
+  Milani}{2014}{prikladnicki2014}
+Prikladnicki, R., Willi, R. \harvardand\ Milani, F.  \harvardyearleft
+  2014\harvardyearright .
+\newblock {\em M{\'e}todos {\'a}geis para desenvolvimento de software}, Bookman
+  Editora.
+
+\harvarditem{Sutherland \harvardand\ Schwaber}{2017}{scrumguide2017}
+Sutherland, J. \harvardand\ Schwaber, K.  \harvardyearleft
+  2017\harvardyearright .
+\newblock Guia do scrum, {\em Um guia definitivo para o Scrum: As regras do
+  Jogo. Scrum.org} .
+
+\harvarditem{TCU}{2013}{atatcu2013}
+TCU  \harvardyearleft 2013\harvardyearright .
+\newblock Ata nº 33, de 28 de agosto de 2013 - sessao ordinaria - plenario,
+  {\em Ata}, Tribunal de Contas da União.
+\newblock Acórdãos Nºs 2261 a 2289 e 2290 a 2332.
+
+\harvarditem{TCU}{2015}{tcu2015}
+TCU  \harvardyearleft 2015\harvardyearright .
+\newblock Acordao 2362/2015 - plenario, {\em Relatorio de auditoria (ra)},
+  Tribunal de Contas da União.
+\newblock Relator: AUGUSTO NARDES, Processo: 002.116/2015-4, Número da ata:
+  38/2015 - Plenário.
+
+\end{thebibliography}
