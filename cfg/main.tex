@@ -1,0 +1,67 @@
+% Arquivo Principal do Documento
+\documentclass[12pt,harvard,brazil,english]{sbatex}
+
+% Configurações
+\input{cfg.tex}
+
+
+\title{%
+	\textbf{Metodolodia de Desenvolvimento de \\ Sistemas (MDS)} \\
+	Processo de Desenvolvimento Ágil de Software \\ (PDAS)	
+	} 
+\author{}{}
+\date{}
+
+\begin{document}\thispagestyle{empty}
+
+\sloppy
+
+\selectlanguage{brazil}
+
+% Título
+\maketitle
+
+\begin{center}
+		\includegraphics[scale=1]{../fig/brasaoCLDF.png}
+\end{center}
+
+\begin{center}
+		\LARGE \textbf{Câmara Legislativa do Distrito Federal}  \normalsize \\
+		\Large Vice-presidência \normalsize \\
+		\large Coordenadoria de Modernização e Informática - CMI \normalsize \\
+		Seção de Administração de Sistemas - SEASI \\
+\end{center}
+
+\vspace{30 mm}
+
+\begin{center}
+	\emph{Outubro de 2009 - Versão 1.0}
+\end{center}
+
+
+% Continuacao
+\clearpage
+\newpage
+
+\renewcommand*\contentsname{Sumário}
+\tableofcontents
+
+% Listas
+%\clearpage
+%\newpage
+%\listofcmdtodo
+
+% Continuacao
+\clearpage
+\newpage
+
+\input{../txt/main/dev.tex}
+
+% BIBLIOGRAFIA
+\clearpage
+\newpage
+\bibliography{../cfg/refs}
+
+As figuras utilizadas para ilustrar artefatos e reuniões são creditadas ao Freepik.com
+
+\end{document}

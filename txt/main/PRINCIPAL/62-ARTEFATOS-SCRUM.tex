@@ -1,0 +1,317 @@
+\subsection{Artefatos originais \Scrum}
+\label{sec:art-scrum}
+
+    Inicialmente, apresentamos os artefatos originais utilizados no \emph{framework} \Scrum cujo uso é indispensável no PDAS dessa instituição.
+
+% -----------------------------------------------------    
+    \subsubsection{Documento de Visão}
+    \label{sec:art-docvisao}
+% -----------------------------------------------------
+
+    \begin{wrapfigure}{r}{0.25\textwidth}
+    \centering
+    \includegraphics[width=0.25\textwidth]{fig/artefato-docvisao2.jpg}
+    \end{wrapfigure}
+    
+    Representa a necessidade, o que deve ser produzido e apresentado ao final do projeto. As informações para definição da visão são obtidas junto ao cliente, usuários finais, \emph{stakeholders} e executivos. A área de negócio com apoio da área de TI elabora o documento de visão que contempla aspectos relacionados a problemas, objetivos de negócio, necessidades, processos de negócio, expectativas, entre outros e, por fim, registra uma proposta de solução, a qual envolve elementos tecnológicos, tais como interoperabilidade com outros sistemas de informação, descrição das características-chaves do produto, descrição dos consumidores da solução (humanos ou não humanos), descrição dos requisitos de ambientes, descrição dos requisitos da documentação, descrição dos requisitos do produto, menção de tecnologias importantes, entre outros. 
+    % AGIL_SISP pg 28
+    
+    Dessa forma, o documento de visão deve ser construído buscando responder as seguintes questões:
+    \begin{itemize}
+        \item  Qual problema, oportunidade, benefícios e necessidades que este produto resolve ou aproveita?
+        \item  Quais são os objetivos específicos de negócio do produto (Objetivos)?
+        \item  Quais os clientes e usuários interessados na solução (Atores)?
+        \item  Como clientes e usuários poderão atingir os objetivos de negócio (Impacto)?
+        \item  Quais as características-chaves (ou macrofunções) do produto final: quais funcionalidades de negócio, performance, segurança, escalabilidade, precisam ser entregues (\emph{Features} Entregáveis)?
+        \item  Quais os processos de negócio envolvidos nesta solução?
+        \item  Quais tarefas e atividades do processo de negócio serão automatizadas?
+        \item  Qual o ciclo de vida das entidades do negócio?
+        \item  Quais ambientes, padrões, aplicações, terá que suportar?
+        \item  Escopo e abordagem da Solução?
+        \item  Quais são os principais riscos e restrições do projeto?
+        \item  Qual a expectativa de custos e prazos?
+        \item  Quais premissas devem ser consideradas?
+        \item  Quais os diferenciais em relação à solução atual ou outra existente?
+    \end{itemize}
+    
+    Recomenda-se utilizar as técnicas descritas no \emph{Guia de Projetos de Software com práticas de métodos ágeis para o SISP} \cite{guiaagilsisp2015} no que tange a atividade ``Construir a Visão do Produto''.
+
+% ---------------------------------------------------------
+    \subsubsection{Product Backlog} 
+    \label{sec:art-pb}
+% ---------------------------------------------------------
+    
+    \begin{wrapfigure}{r}{0.25\textwidth}
+    \centering
+    \includegraphics[width=0.25\textwidth]{fig/artefato-productbacklog.jpg}
+    \end{wrapfigure}
+    
+    O \emph{Product Backlog} contém todas as necessidades ou objetivos de negócios dos clientes do projeto e demais partes interessadas e pode também conter melhorias a serem realizadas no produto, correções de problemas, questões técnicas, pesquisas que forem necessárias etc. Assim, tudo o que pode vir a ser desenvolvido para se alcançar a Visão do Produto é adicionado como um item priorizado e ordenado no \emph{Product Backlog}.
+    
+    Os itens do \emph{Product Backlog} são ordenados de acordo com o grau de importância de seu desenvolvimento visando, sempre, garantir e maximizar o retorno sobre o investimento (ROI) realizado por eles no projeto.
+
+    O \emph{Product Backlog} está em constante evolução e, assim, nunca está terminado ou completo. Conforme o produto evolui, o \emph{Product Backlog} é frequentemente modificado com a adição, subtração, reordenamento e modificação de seus itens. O produto evolui à medida que o ambiente muda e à medida que tanto clientes quanto Time de Desenvolvimento vão conhecendo e entendendo melhor o produto que está sendo construído.
+    
+% -----------------------------------------
+    \subsubsection{Sprint Backlog}    
+    \label{sec:art-sb}
+% -----------------------------------------    
+    
+    \begin{wrapfigure}{r}{0.25\textwidth}
+    \centering
+    \includegraphics[width=0.25\textwidth]{fig/artefato-sprintbacklog.jpg}
+    \end{wrapfigure}    
+    
+    É uma lista de itens selecionados do alto do \emph{Product Backlog} para o desenvolvimento do Incremento do Produto no \emph{Sprint} (o quê), adicionada de um plano de como esse trabalho será realizado (como).
+
+    O plano de como os itens do \emph{Sprint Backlog} serão desenvolvidos é geralmente expresso por um conjunto de tarefas correspondente a cada item, além da indicação do andamento de cada tarefa, ou seja, se ela ainda não foi iniciada, se está em andamento ou se já está terminada.
+    
+    O \emph{Sprint Backlog} pertence ao Time de Desenvolvimento, que é responsável por seu uso e manutenção. Ele deve refletir o momento atual e, para isso, o Time de Desenvolvimento o atualiza sempre que houver qualquer mudança.
+    
+    
+% --------------------------------------------------------
+    \subsubsection{História de usuário}
+    \label{sec:art-us}
+% ---------------------------------------------------------
+
+    % http://www.metodoagil.com/historias-de-usuario/
+    
+    História de usuário é uma descrição concisa de uma necessidade do usuário do produto (ou seja, de um “requisito”) sob o ponto de vista desse usuário. A história de usuário busca descrever essa necessidade de uma forma simples e leve. Os detalhes de negócios podem ser documentados de diferentes formas e anexados à história de usuário. Questões técnicas (como de refatoração de código ou população de um banco de dados, por exemplo), de pesquisa ou de correção de problemas dificilmente podem ser descritas sob a perspectiva do usuário. Embora pertençam ao \emph{Product Backlog}, não devem, assim, ser representadas por história de usuário. 
+
+    Nas próximas seções serão apresentados o formato clássico de uma história de usuário. Em seguida serão descritos um conjunto de sugestões para se escrever boas histórias de usuário. Finalmente, vamos descrever como essa ferramenta deve ser utilizada na prática.  
+
+    \subsubsubsection{Formato Clássico}
+
+    Uma história de usuário clássica geralmente responde às perguntas:
+
+    \setlength{\columnsep}{0.2in}
+    \begin{multicols}{3}
+        \begin{itemize}
+            \item Porque? 
+            \item Quem? 
+            \item O quê?
+        \end{itemize}
+    \end{multicols}
+
+    Dessa forma, geralmente seguem o seguinte formato:
+    
+    \begin{quote}
+        ``Eu, no papel de... (para quem estamos fazendo) quero.... (o que de fato precisa ser feito) para... (o porquê da história)'' 
+    \end{quote}
+    
+    
+    \subsubsubsection{Sugestões para produzir boas histórias de usuário}
+    
+    \citeasnoun{histuser19} apresenta sugestões do que deve ser feito para se produzir uma boa história de usuário:
+    
+    \begin{enumerate}
+        \item  \textbf{Focar no cliente ou usuário final} -  o foco deve estar no que o usuário final deseja. Por isso a história é de ``usuário''. Portanto, identificar quem será o usuário final é fundamental para que as histórias sejam escritas para atender aos interesses dele.
+        
+        \item \textbf{Utilizar personas} - Personas são personagens que irão representar o usuário final, ou seja, deve-se criar um ou mais personagens que tenham as mesma características dos usuários e a partir dessas definições levantar os desejos dessas personas.
+        
+        \item \textbf{Histórias de Usuário são informais} -  Histórias de Usuário são informais e servem tão somente para representarem os desejos dos usuários que vão utilizar os sistemas. Elas devem ser 
+        tratadas como conversas informais escritas no papel. Não confundir história de usuário com a documentação. Cada uma serve para uma coisa diferente. 
+        
+        \item \textbf{Deve representar o valor de negócio} - Uma história de usuário deve ter um motivo para existir. Assim, ao se escrever histórias de usuário, além das perguntas ``o que?'' e ``como?'' não pode-se deixar de responder a pergunta: ``Porque'' ou ``Para que''  essa história existe?
+        
+        %\TODO{Revisar esse porque ai quando ao acento e forma}
+        
+        \item \textbf{Deve atender aos critérios INVEST}
+        
+        História de Usuário devem atender aos critérios INVEST abaixo descritos:
+        
+            \begin{itemize}
+                \item \textbf{Independente}:
+                
+                As Histórias de Usuário devem ser a mais independente ou desacoplada possível umas das outras, ou seja, história de usuário com grande número de dependências em outras histórias de usuário devem ser evitadas. Essa independência visa ser viável alterar livremente a ordem que serão desenvolvidas e, ao fazê-lo, não ser necessário alterar suas estimativas.
+                
+                Cabe adicionar que uma história de usuário se traduzirá sempre em uma funcionalidade de ponta a ponta, que representa valor para o usuário. Além disso, deve ser possível entender uma história de usuário sem ser necessário ler quaisquer outras.
+                
+                \item \textbf{Negociável e negociada}:
+                
+                Seus detalhes serão discutidos, negociados e definidos com o \PO e o Time de Desenvolvimento.
+                
+                \item \textbf{Valiosa}:
+                
+                Devem representar valor de negócio para os clientes do projeto. Ao dividir-se uma história de usuário, o resultado dessa divisão deve ser histórias menores que também representem funcionalidades de ponta a ponta, e não partes de trabalho técnico.
+                
+                \item \textbf{Estimável}:
+            
+                O Time de Desenvolvimento deve possuir detalhes suficientes — tanto técnicos quanto de negócios — para estimar o trabalho de se transformar a história de usuário em parte do produto, de forma que o \PO possa ordená-la apropriadamente.
+            
+                \item \textbf{Pequena}:
+                
+                Pequena ou (“small”, em inglês) ou dimensionada apropriadamente: apenas história de usuário pequenas e com um bom nível de detalhes podem ser colocadas em desenvolvimento.
+                
+                \item \textbf{Testável}:
+                
+                Deve ser possível verificar e confirmar que a história de usuário está pronta, ou seja, que foi transformada em parte do produto e está funcionando conforme esperado. A verificação é realizada por meio dos Critérios e Testes de Aceitação.
+            
+            \end{itemize}
+
+        \item \textbf{Não confiar apenas nas histórias}
+        
+        Histórias de usuário são informais e não vão substituir a documentação, mas devem ser completadas com tudo o que for necessário e que agregue valor para o time de desenvolvimento.
+        
+        \item \textbf{Identificar um ``Épico'' e criar histórias a partir dele}
+        
+        Épicos são grandes histórias que geralmente não atendem ao critério INVEST de independência já que elas dependem de uma ou mais histórias. Após identificar um épico, as histórias de usuário são mais facilmente elaboradas a partir dele. Tome como exemplo, o seguinte épico: \textbf{``Como usuário gostaria de pagar minha compra para poder receber os produtos''}. Essa história é um Épico pois para o usuário realizar o pagamento ele terá que realizar outras ações como, escolher a forma de pagamento, selecionar o cartão de crédito, informar se vai dividir ou não, e para receber o produto, uma série de outras ações devem ser realizadas por diversas personas.
+    \end{enumerate}
+
+    Para ilustrar, apresentamos alguns exemplos de História de Usuário para o desenvolvimento fictício de um sistema de controle de inscrição em cursos:
+    
+    \begin{env-cinza}
+    
+        \textbf{Histórias de Usuário - Sistema de Controle de Inscrições (exemplo)}
+    
+        \begin{itemize}
+            \item Eu como usuário, quero consultar cursos e turmas disponíveis, para poder escolher qual turma cursar.
+
+            \item Eu como usuário, quero poder me inscrever no curso que escolhi, para poder realizar o treinamento. 
+            \item Para gerenciar as inscrições no sistema, eu no papel de administrador, desejo poder confirmar os inscritos nas turmas.
+            
+            \item Para gerenciar as inscrições no sistema, eu no papel de administrador, desejo poder trocar os inscritos de turma.
+        \end{itemize}
+    \end{env-cinza}    
+
+    \subsubsubsection{Histórias de usuário na prática}
+
+    Com a popularização da metodologia \Scrum, outros elementos passaram a acompanhar as histórias de usuário como, por exemplo, critérios de aceitação e propriedades como prioridade, tamanho, etc.  No entanto, pela falta de um termo melhor, as pessoas continuaram chamando este conjunto de elementos (história, critérios, propriedades, etc) com o mesmo nome de ``História de Usuário''.
+    
+    Dessa forma, na prática, sugere-se que uma História de Usuário seja acompanhada de outros elementos a saber:
+
+    \setlength{\columnsep}{0.2in}
+    \begin{multicols}{3}
+        \begin{itemize}
+            \item Alias
+            
+            \item Narrativa
+    
+            \item Critérios de Aceitação
+            
+            \item Conversação
+            
+            \item Prioridade
+            
+            \item Tamanho
+        \end{itemize}
+    \end{multicols}
+
+    Vamos descrever cada elemento:
+
+    \begin{figure}[htpb]
+    \centering
+    
+    \subfigure[Sugestão]{
+    \includegraphics[width=.45\textwidth]{fig/ARTEFATO-USERSTORY1.png}
+    }
+    \subfigure[Exemplo]{
+    \includegraphics[width=.45\textwidth]{fig/ARTEFATO-USERSTORY2.png}
+    }
+    
+    \caption{Sugestão e exemplo de História de Usuário na prática}
+    \label{fig:userstory}
+    \end{figure}
+
+    \begin{itemize}
+    
+
+        \item \textbf{Alias}:
+    
+    Em computação, alias é um apelido, ou seja, trata-se de uma descrição curta da história usada para referenciá-la de forma simples e intuitiva. 
+    
+            \item \textbf{Narrativa}:
+    
+     Trata-se da descrição da história de usuário propriamente dita de acordo com o formato clássico e as sugestões apresentadas nas seções anteriores.
+    
+            \item \textbf{Critérios de Aceitação}:
+    
+    É uma descrição dos testes e critérios usados para aceitação do incremento do produto. Geralmente, apresentam o seguinte formato:
+    
+    \begin{quote}
+        ``\textbf{Dado que} PREMISSAS
+        
+        \textbf{[e]}
+        
+        \textbf{Quando} AÇÃO
+        
+        \textbf{Então} RESULTADO''
+        
+    \end{quote}
+
+            \item \textbf{Conversação}:
+    
+    Informações coletadas durante as conversas com o \PO, requisitos não funcionais, dentre outras observações, que poderão originar novas histórias de usuário.
+    
+            \item \textbf{Prioridade}:
+    
+    Medida de aferição de prioridade. Sugere-se que seja um número inteiro entre 1 (maior prioridade) e 5 (menor prioridade) usado para priorizar essa história;
+    
+            \item \textbf{Tamanho}:
+    
+    Tamanho estimado em pontos de função.
+    
+    
+    \end{itemize}
+
+    
+    Para ilustrar, apresentamos a figura \ref{fig:userstory} com uma sugestão de História de Usuário na prática (a) e um exemplo de história preenchida (b).
+    
+    % -----------------------------------------------------    
+    \subsubsection{Definição de Pronto}
+    \label{sec:art-defpronto}
+    % -----------------------------------------------------    
+    
+    A Definição de ``Pronto'' é um acordo formal entre \PO e o Time de Desenvolvimento sobre o que é necessário para se considerar que um trabalho realizado na Sprint está pronto. São, portanto, critérios definidos por ambos para garantir a transparência, por meio da compreensão compartilhada do que significa quando o Time de Desenvolvimento afirma que qualquer item ou o Incremento do Produto está pronto. 
+    
+    \begin{env-cinza}
+        \textbf{Exemplo de uma Definição de ``Pronto''}
+
+        Somente consideraremos o incremento do produto pronto se estiver:
+        
+        \begin{itemize}
+            \item Codificado
+            \item Passando nos testes unitários
+            \item Passando nos testes de aceitação
+            \item Integrado ao sistema ABCD
+            \item Com o manual do usuário atualizado
+        \end{itemize}
+        
+    \end{env-cinza}
+
+    \textbf{Definição de Pronto para projetos de desenvolvimento e suporte de sistemas}:
+    
+    \begin{itemize}
+    	\item Todas as funcionalidades do backlog da sprint ou da release foram implementadas e estão livres de erros ou defeitos impeditivos;
+    	\item Elaboração ou atualização dos artefatos previstos para cada fase do processo; 
+    	\item Sistema, software ou aplicativo disponível funcionalmente no ambiente de homologação, ou outro definido pela Contratante;
+    	\item Conformidades com os guias ou documentos de apoio (arquitetura, padrão visual, política de administração de dados); 
+    	\item A qualidade do código satisfaz aos indicadores preestabelecidos e foram aprovados pela Contratante, conforme Relatório de Qualidade e de Segurança; 
+    	\item Artefatos corretamente identificados quanto à autoria e versionamento em repositório da Contratante;
+    	\item Funcionalidade validada e aprovada pelo \PO;
+    	\item Release ou Sprint validada pelo Fiscal do contrato.
+    \end{itemize}
+    
+    \textbf{Definição de pronto para projetos de documentação de sistemas}:
+    
+    \begin{itemize}
+    	\item Artefatos escritos de forma adequada e, se conter requisitos, que esses possibilitem identificar se são mensuráveis, em termos de função transacional e de dados;
+    	
+    	\item Requisitos adequados materialmente (não-ambiguidade, não-redundância, ausência de conflitos entre requisitos ou histórias de usuários, não-divisibilidade, ausências de inconsistências, documento claro e coeso, requisitos rastreáveis até o nível do \emph{backlog} do produto e da \emph{release} e requisitos testáveis); 
+    	
+    	\item Artefatos padronizados em \emph{templates} definidos pela Contratante;
+
+    	\item Artefatos corretamente identificados quanto à autoria e versionamento em repositório da Contratante;
+    	
+    	\item Artefato validado e aprovado pelo dono do produto, se for o caso;
+    	\item Artefato validado pelo Líder de projeto e pelo Fiscal do contrato
+    \end{itemize}
+
+% -----------------------------------------
+    \subsubsection{Incremento do Produto}
+    \label{sec:art-incproduto}
+% -----------------------------------------
+    Em cada Sprint do projeto, o Time de Desenvolvimento trabalha nos itens selecionados para o Sprint Backlog, do mais importante para o menos importante, visando atingir a Meta do Sprint. O Incremento do Produto é o resultado desse trabalho, ou seja, é a soma de todos os itens completos no Sprint.
+    
+    O Time de Desenvolvimento demonstra o Incremento do Produto para os clientes do projeto ao final de cada Sprint, na reunião de Sprint Review. O principal objetivo dessa reunião é obter feedback dessas pessoas sobre o trabalho realizado. O Incremento do Produto deve representar valor visível para eles, ou seja, funcionalidades que podem ser experimentadas e utilizadas.
+    

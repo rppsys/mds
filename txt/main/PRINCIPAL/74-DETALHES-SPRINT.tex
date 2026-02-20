@@ -1,0 +1,262 @@
+%########################################
+% DETALHES SPRINT
+%########################################
+
+\subsection{Subprocesso \Sprint}
+\label{sec:det-sprint}
+
+\DETALHAR
+{Evento}
+{Sinal de Início}
+{tar:det-sprint-sinal-inicio}
+{\corTipoEventoInicio}
+{fig/det-sinalinicio.jpg}
+{
+Sinal de início do processo \Sprint.
+}
+{
+\msnone
+}    
+{
+\msnone
+}
+{
+\msnone
+}    
+{
+}    
+{\msnone}
+{tar:det-sprint-sinal-inicio}
+{Processo ``Realizar Reunião de Planejamento da \Sprint''}
+{tar:det-sprint-pro-rrps}
+{}
+{OK}
+
+%########################################
+\DETALHAR
+{Processo}
+{Realizar Reunião de Planejamento da Sprint}
+{tar:det-sprint-pro-rrps}
+{\corTipoProcesso}
+{fig/det-pro.jpg}
+{
+    Planejar o ciclo de desenvolvimento e o escopo da \Sprint. O time de desenvolvimento seleciona itens do \PB com os quais se compromete a concluir, criando o \SB.
+}
+{
+\iLT
+
+\iLN
+
+\iSM
+
+\iTD
+
+\iRQ \xspace (Opcional)
+}    
+{
+\msi \PB
+}
+{
+\msi \SB
+}    
+{
+    \textbf{Outras informações:}
+
+    Esta reunião ocorre em duas fases conforme foi descrito na seção \ref{sec:reuniaoPlanejamentoSprint}.
+}    
+{\msnone}
+{tar:det-sprint-evento-rps}
+{
+\emph{Gateway} de ativação incondicional paralelo:
+
+\msi Processo ``Desenvolver''
+
+\msi Processo ``Acompanhar \Sprint''
+}
+{tar:det-sprint-pro-d}
+{}
+{OK}
+
+%########################################
+\DETALHAR
+{Processo}
+{Desenvolver}
+{tar:det-sprint-pro-d}
+{\corTipoProcesso}
+{fig/det-pro.jpg}
+{
+    Nesta atividade é desenvolvido o trabalho (funcionalidades) definido no \SB (todo o trabalho ou o que for possível).
+}
+{
+\iSM
+
+\iTD
+}    
+{
+\msi \SB
+}
+{
+\msi Incremento do Produto
+
+\msi Outros entregáveis previamente definidos
+}    
+{
+}    
+{Processo ``Realizar Reunião de Planejamento da Sprint''}
+{tar:det-sprint-pro-rrps}
+{Processo ``Entregar''}
+{tar:det-sprint-pro-e}
+{}
+{OK}
+
+%########################################
+\DETALHAR
+{Processo}
+{Entregar}
+{tar:det-sprint-pro-e}
+{\corTipoProcesso}
+{fig/det-pro.jpg}
+{
+    Essa atividade envolve entregar o que foi desenvolvido durante a \Sprint para o Líder Técnico.
+}
+{
+\iSM
+
+\iTD
+}    
+{
+\msi Incremento do Produto
+
+\msi Outros entregáveis previamente definidos
+}
+{
+\msi Desenvolvimento entregue da forma e no formato previamente definidos em reunião
+}    
+{
+    \textbf{Outras informações:}
+
+    A forma e o formato da entrega, ou seja, se a Fábrica de Software deverá instalar o software em um ambiente de homologação e outros detalhes deverão ser acordados com o Líder Técnico previamente, preferencialmente, nas reuniões de planejamento iniciais (\ref{sec:reuniaoPlanejamento}) ou na reunião de planejamento da \Sprint (\ref{sec:reuniaoPlanejamentoSprint}).
+}    
+{Processo ``Desenvolver''}
+{tar:det-sprint-pro-d}
+{Processo ``Realizar Reunião de Encerramento da Sprint''}
+{tar:det-sprint-pro-rres}
+{}
+{OK}
+
+%########################################
+\DETALHAR
+{Processo}
+{Acompanhar \Sprint}
+{tar:det-sprint-pro-a}
+{\corTipoProcesso}
+{fig/det-pro.jpg}
+{
+    Acompanhar a \Sprint de modo a remover os impedimentos internos à CLDF, visando assegurar que o objetivo seja atingido.
+}
+{
+\iLT
+}    
+{
+\msnone
+}
+{
+\msnone
+}    
+{
+    \textbf{Outras informações:}
+
+    Caberá ao Líder Técnico, durante os ciclos de desenvolvimento, tão somente acompanhar o
+    desenrolar das atividades do \SM e do time de desenvolvimento da Fábrica de Software visando remover quaisquer impedimentos internos ao ambiente do órgão para que o ciclo possa atingir seu objetivo.
+}    
+{Processo ``Realizar Reunião de Planejamento da Sprint''}
+{tar:det-sprint-pro-rrps}
+{Processo ``Realizar Reunião de Encerramento da Sprint''}
+{tar:det-sprint-pro-rres}
+{}
+{OK}
+
+%########################################
+\DETALHAR
+{Processo}
+{Realizar Reunião de Encerramento da Sprint}
+{tar:det-sprint-pro-rres}
+{\corTipoProcesso}
+{fig/det-pro.jpg}
+{
+    Apresentar o resultado da Sprint.
+}
+{
+\iLT
+
+\iLN
+
+\iSM
+
+\iTD
+
+\iRQ \xspace (Opcional)
+}    
+{
+\msi Incremento do Produto
+
+\msi Desenvolvimento entregue da forma e no formato previamente definidos em reunião
+
+\msi Outros entregáveis 
+}
+{
+\msi Avaliação de Atingimento da Meta da Sprint
+
+\msi Anotações de próximos passos a serem tomados 
+
+\msi Anotações de itens para atualização do \PB
+}    
+{
+    \textbf{Outras informações:}
+    
+    A reunião de encerramento de \Sprint é explicada na seção \ref{sec:reuniaoEncerramentoSprint}.
+
+}    
+{ 
+\emph{Gateway} de ativação incondicional paralelo:
+
+\msi Processo ``Entregar''
+
+\msi Processo ``Acompanhar \Sprint''
+}
+{tar:det-sprint-pro-a}
+{Sinal de Fim}
+{tar:det-sprint-sinal-final}
+{}
+{OK}
+
+%########################################
+
+\DETALHAR
+{Evento}
+{Sinal de Fim}
+{tar:det-sprint-sinal-final}
+{\corTipoEventoFinal}
+{fig/det-sinalfinal.jpg}
+{
+Sinal de finalização desta iteração de desenvolvimento.
+}
+{
+\msnone
+}    
+{
+\msnone
+}
+{
+\msnone
+}    
+{
+}    
+{Processo ``Realizar Reunião de Encerramento de \Sprint''}
+{tar:det-sprint-pro-rres}
+{Sinal de Início do Subprocesso ``Realizar Ateste Técnico''}
+{tar:det-rat-sinal-inicio}
+{}
+{OK}
+
+%########################################

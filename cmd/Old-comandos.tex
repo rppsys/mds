@@ -1,0 +1,207 @@
+
+\newcommand{\DETALHAROLD}[9]{
+    %Tipo: #1
+    %Nome: #2
+    %Objetivo: #3
+    %Participantes: #4
+    %Entradas: #5
+    %Saídas: #6
+    %Outros: #7
+    %Fig: #8
+    %Caption: #9
+
+    \setlength{\arrayrulewidth}{1pt}
+    \setlength{\tabcolsep}{12pt}
+    \renewcommand{\arraystretch}{1}    
+    
+    \begin{table}
+        \begin{center}
+            \begin{tabular}{|p{2cm}|p{3cm}|p{7cm}| }
+                \hline
+                \rowcolor{lightgray} #1 & \multicolumn{2}{|c|}{#2} \\
+                \hline
+                \multirow{4}{*}{#8} 
+                 & \textbf{OBJETIVO} & #3 \\ \cline{2-3}
+                 & \textbf{PARTICIPANTES} & #4 \\ \cline{2-3}
+                 & \textbf{ENTRADAS} & #5 \\ \cline{2-3}
+                 & \textbf{SAÍDAS} & #6 \\ \cline{2-3}
+                \hline
+                \multicolumn{3}{|l|}{#7} \\
+                \hline
+                \end{tabular}
+                \caption{#9}
+            \end{center}
+        \end{table}
+}
+
+\newcommand{\DETALHARRUIM}[9]{
+    %Tipo: #1
+    %Nome: #2
+    %Objetivo: #3
+    %Participantes: #4
+    %Entradas: #5
+    %Saídas: #6
+    %Outros: #7
+    %Fig: #8
+    %Caption: #9
+
+    \setlength{\arrayrulewidth}{1pt}
+    \setlength{\tabcolsep}{12pt}
+    \renewcommand{\arraystretch}{1}    
+    
+    \begin{table}
+        \begin{center}
+            \begin{tabular}{|p{2cm}|p{3cm}|p{7cm}| }
+                \hline
+                \rowcolor{lightgray} #1 & \multicolumn{2}{|c|}{#2} \\
+                \hline
+                \multirow{4}{*}{
+                
+                \raisebox{-\totalheight}{\includegraphics[width=0.2\textwidth, height=60mm]{#8}}
+                
+                } 
+                 & \textbf{OBJETIVO} & #3 \\ \cline{2-3}
+                 & \textbf{PARTICIPANTES} &
+                    #4   
+                 \\ \cline{2-3}
+                 & \textbf{ENTRADAS} & 
+                    #5 
+                 \\ \cline{2-3}
+                 & \textbf{SAÍDAS} & 
+                    #6 
+                 \\ \cline{2-3}
+                 & \textbf{INFO} & 
+                    #7 
+                 \\ \hline
+                \end{tabular}
+                \caption{#9}
+            \end{center}
+        \end{table}
+}
+
+
+
+\newcommand{\DETALHARGOOD}[9]{
+    %Tipo: #1
+    %Nome: #2
+    %Objetivo: #3
+    %Participantes: #4
+    %Entradas: #5
+    %Saídas: #6
+    %Outros: #7
+    %Fig: #8
+    %Caption: #9
+    
+    \subsection{#1 #2}
+    
+    \begin{table}[ht]
+    \centering
+        \begin{tabular}{|*{2}{m{0.45\textwidth}|}}
+            \hline
+                \rowcolor{lightgray} \multicolumn{2}{|c|}{#1: #2} \\ \hline
+            
+            
+                \begin{center}
+                    \includegraphics[width=0.25\textwidth]{#8}
+                \end{center} 
+                &
+                \textbf{Objetivo:} #3
+                \\  \hline
+                \textbf{PARTICIPANTES} & #4 \\ \hline
+                \textbf{ENTRADAS} & #5 \\ \hline
+                \textbf{SAÍDAS} & #6 \\ \hline
+        \end{tabular}
+    \label{tab:gt}
+    %\caption{#9}
+    \end{table}
+#7
+}
+
+
+\newcommand{\DETALHARATUAL}[9]{
+    %Tipo: #1
+    %Nome: #2
+    %Objetivo: #3
+    %Participantes: #4
+    %Entradas: #5
+    %Saídas: #6
+    %Outros: #7
+    %Fig: #8
+    %Cor: #9
+    \subsubsection{#1: ``#2''}
+
+    \begin{tabular}{|*{2}{m{0.4\textwidth}||}}
+        \hline
+            \rowcolor{#9} \multicolumn{2}{|c|}{\LARGE #1: ``#2'' \normalsize} \\ \hline \hline
+            \begin{center}
+                \includegraphics[width=0.25\textwidth]{#8}
+            \end{center} 
+            &
+            \textbf{Objetivo:} #3
+            \\  \hline
+            \textbf{PARTICIPANTES} & #4 \\ \hline
+            \textbf{ENTRADAS} & #5 \\ \hline
+            \textbf{SAÍDAS} & #6 \\ \hline
+    \end{tabular}
+    
+    \vspace{2mm}
+    #7
+}
+
+
+
+% COMANDO ANTIGO
+
+% Comando usado para criar o detalhamento dos processos
+\newcommand{\DETALHAR}[9]{
+    \def\DetalharArgI{#1} 
+    \def\DetalharArgII{#2} 
+    \def\DetalharArgIII{#3} 
+    \def\DetalharArgIV{#4} 
+    \def\DetalharArgV{#5} 
+    \def\DetalharArgVI{#6} 
+    \def\DetalharArgVII{#7} 
+    \def\DetalharArgVIII{#8} 
+    \def\DetalharArgIX{#9} 
+    \DETALHARCOMANDO
+}
+
+\newcommand{\DETALHARCOMANDO}[3]{
+    %Tipo: \DetalharArgI
+    %Nome: \DetalharArgII
+    %Objetivo: \DetalharArgIII
+    %Participantes: \DetalharArgIV
+    %Entradas: \DetalharArgV
+    %Saídas: \DetalharArgVI
+    %Outros: \DetalharArgVII
+    %Fig: \DetalharArgVIII
+    %Cor: \DetalharArgIX
+    %Hypertarget: #1
+    %Anterior: #2
+    %Posterior: #3
+    
+    \subsubsection{\DetalharArgI: ``\DetalharArgII''}
+
+    \begin{tabular}{|*{2}{m{0.4\textwidth}||}}
+        \hline
+            \rowcolor{\DetalharArgIX} \multicolumn{2}{|c|}{\LARGE \DetalharArgI: ``\DetalharArgII'' \normalsize} \\ \hline \hline
+            \begin{center}
+                \includegraphics[width=0.15\textwidth]{\DetalharArgVIII}
+            \end{center} 
+            &
+            \textbf{\hypertarget{#1}{Objetivo:}} \DetalharArgIII
+            \\  \hline
+            \textbf{PARTICIPANTES} & \DetalharArgIV \\ \hline
+            \textbf{ENTRADAS} & \DetalharArgV \\ \hline
+            \textbf{SAÍDAS} & \DetalharArgVI \\ \hline \hline
+            \rowcolor{\DetalharArgIX} \small \hyperlink{#2}{\msleftarrow \textbf{ATIVIDADE ANTERIOR}} \normalsize &  \small \hyperlink{#3}{\textbf{PRÓXIMA ATIVIDADE} \msrightarrow} \normalsize \\ \hline
+            #2 & #3 \\ \hline
+    \end{tabular}
+    
+    \vspace{2mm}
+    \DetalharArgVII
+}
+
+
+
+

@@ -1,0 +1,257 @@
+\section{Testes Latex}
+
+\setlength{\columnsep}{0.2in}
+\begin{multicols}{2}
+    \begin{itemize}
+        \item	Direciona o projeto, prioriza o que será feito, conversa com as áreas envolvidas;
+        \item	Garante o patrocínio do projeto;
+        \item	Normalmente é um servidor da área de negócio (gestora do sistema);
+        \item	Aceita, rejeita ou pede ajustes nas entregas, do ponto de vista do negócio;
+        \item	Assina um termo de recebimento das funcionalidades.  
+        \item	Garante que as demandas passadas à empresa atendem aos usuários e ao direcionamento da Alta Administração.
+    \end{itemize}    
+\end{multicols}
+
+
+% Exemplos de Referências Cruzadas
+\begin{itemize}    
+    \item \hyperref[sec-papeis]{ \underline{Esse é um link para secao papeis}} e note que o comando aqui usa colchetes como primeiro argumento
+    
+    \item \autoref{sec-papeis} cria a subseção automaticamente
+    \item \nameref{sec-papeis} é uma outra forma
+    \item Olhar este         \href{https://tex.stackexchange.com/questions/180571/making-clickable-links-to-sections-with-hyperref}{ \underline{link do stackoverflow}} e essa 
+    documentação do overleaf em \url{https://www.overleaf.com/learn/latex/Hyperlinks}
+\end{itemize}
+        
+
+
+Tabela Colorida com 3 Colunas
+
+    {\rowcolors{3}{green!80!yellow!50}{green!70!yellow!40}    
+    \begin{tabular}{ |p{3cm}|p{3cm}|p{3cm}|  }
+        \hline
+        \multicolumn{3}{|c|}{Participantes da Reunião de Planejamento} \\
+        \hline
+        Country Name or Area Name & ISO ALPHA 2 Code &ISO ALPHA 3 \\
+        \hline
+        Afghanistan & AF &AFG \\
+        Aland Islands & AX   & ALA \\
+        Albania &AL & ALB \\
+        Algeria    &DZ & DZA \\
+        American Samoa & AS & ASM \\
+        Andorra & AD & AND   \\
+        Angola & AO & AGO \\
+        \hline
+    \end{tabular}
+    }
+    
+    {\rowcolors{3}{green!80!yellow!50}{green!70!yellow!40}    
+    \begin{tabular}{ |p{2cm}|p{2cm}|p{2cm}| p{2cm} | }
+        \hline
+        \multicolumn{4}{|c|}{Participantes da Reunião de Planejamento} \\
+        \hline
+        Instituição &  Área & Ator & Papel \Scrum  \\
+        \hline
+        CLDF & Negócios & Líder de Negócios & \PO \\
+        CLDF & TI & Líder Técnico & - \\
+        Fábrica de Software & - & \SM da Fábrica de Software & \SM \\
+        
+        \hline
+    \end{tabular}
+    }
+    
+    
+    
+    \setlength{\arrayrulewidth}{1pt}
+    \setlength{\tabcolsep}{12pt}
+    \renewcommand{\arraystretch}{1}    
+    
+        \begin{table}
+            \begin{center}
+                \begin{tabular}{ |p{2cm}|p{6cm}|p{4cm}| }
+                    \hline
+                    \rowcolor{lightgray} \multicolumn{3}{|c|}{Artefatos} \\
+                    \hline
+                    \rowcolor{lightgray!20} Etapa & Artefato &  Responsáveis  \\
+                    \hline
+
+% PLANEJAMENTO
+\multirow{8}{*}{Planejamento} 
+ & Documento de Visão & CLDF (TI e Negócios) \\ \cline{2-3}
+ & Documento de Definição de Líder Técnico e Líder de Negócios & CLDF (TI e Negócios) \\ \cline{2-3}
+ & Glossário de termos técnicos do negócio & Área de Negócios \\ \cline{2-3}
+ & Product Backlog & FS, FQ, LT, LN \\ \cline{2-3}
+ & Proposta de Identidade Visual & Fábrica de Software \\ \cline{2-3}
+ & Relatório de Verificação de Requisitos & Fábrica de Qualidade \\ \cline{2-3}
+ & Estratégia de Teste & Fábrica de Qualidade \\ \cline{2-3}
+ & Ata de Reunião de Planejamento & FS, FQ, CLDF \\ 
+ 
+ \hline
+ 
+% DESENVOLVIMENTO
+
+\multirow{18}{*}{Desenvolvimento}
+
+& Documento de Visão & CLDF (TI e Negócios) \\ \cline{2-3}
+& Documento de Definição de Líder Técnico e Líder de Negócios & CLDF (TI e Negócios) \\ \cline{2-3}
+
+
+
+
+                    \hline
+                \end{tabular}
+                \caption{\label{tab:art-plan} Artefatos sugeridos}
+            \end{center}
+        \end{table}
+        
+        
+\DETALHAR
+{Tipo}
+{Nome}
+{
+Descrever os objetivos de forma resumida.
+}
+{
+Participante 1
+
+Participante 2
+}    
+{
+Entrada 01
+
+Entrada 02
+
+Entrada 03
+}
+{
+Saida 01
+
+Saída 02
+}    
+{
+    \textbf{Outras informações:}
+    \setlength{\columnsep}{0.2in}
+    \begin{multicols}{3}
+        \begin{enumerate}
+            \item Coisa 1
+            \item Coisa 2
+            \item Coisa 3
+        \end{enumerate}
+    \end{multicols}
+}    
+{fig/artefato-docvisao2.jpg}
+{lightgray!50}
+
+%########################################
+\DETALHAR
+{Tipo}
+{Nome}
+{
+Descrever os objetivos de forma resumida.
+}
+{
+Participante 1
+
+Participante 2
+}    
+{
+Entrada 01
+
+Entrada 02
+
+Entrada 03
+}
+{
+Saida 01
+
+Saída 02
+}    
+{
+    \textbf{Outras informações:}
+    \setlength{\columnsep}{0.2in}
+    \begin{multicols}{3}
+        \begin{enumerate}
+            \item Coisa 1
+            \item Coisa 2
+            \item Coisa 3
+        \end{enumerate}
+    \end{multicols}
+}    
+{fig/artefato-docvisao2.jpg}
+{lightgray!50}
+%########################################
+\DETALHAR
+{Tipo}
+{Nome}
+{
+Descrever os objetivos de forma resumida.
+}
+{
+Participante 1
+
+Participante 2
+}    
+{
+Entrada 01
+
+Entrada 02
+
+Entrada 03
+}
+{
+Saida 01
+
+Saída 02
+}    
+{
+    \textbf{Outras informações:}
+    \setlength{\columnsep}{0.2in}
+    \begin{multicols}{3}
+        \begin{enumerate}
+            \item Coisa 1
+            \item Coisa 2
+            \item Coisa 3
+        \end{enumerate}
+    \end{multicols}
+}    
+{fig/artefato-docvisao2.jpg}
+{lightgray!50}
+%########################################
+\DETALHAR
+{Tipo}
+{Nome}
+{
+Descrever os objetivos de forma resumida.
+}
+{
+Participante 1
+
+Participante 2
+}    
+{
+Entrada 01
+
+Entrada 02
+
+Entrada 03
+}
+{
+Saida 01
+
+Saída 02
+}    
+{
+    \textbf{Outras informações:}
+    \setlength{\columnsep}{0.2in}
+    \begin{multicols}{3}
+        \begin{enumerate}
+            \item Coisa 1
+            \item Coisa 2
+            \item Coisa 3
+        \end{enumerate}
+    \end{multicols}
+}    
+{fig/artefato-docvisao2.jpg}
+{lightgray!50}
+%########################################
+        

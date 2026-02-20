@@ -1,0 +1,81 @@
+% -----------------------------------------------------------
+                % Elementos: Atores, Artefatos, Etc...
+% -----------------------------------------------------------
+\newenvironment{env-nota}
+    {
+        \begin{colbox}{\corNota}
+        \textbf{Nota:}
+        \parindent12pt
+    }
+    {
+        \end{colbox}
+    }
+%--------------------------------------
+\newenvironment{env-nota-i}
+    {
+        \begin{colbox}{\corDuvida}
+        \textbf{Nota:}
+        \begin{itemize}
+    }
+    {
+        \end{itemize}
+        \end{colbox}
+    }
+%--------------------------------------
+\newenvironment{env-cinza}
+    {
+        \begin{colbox}{\corCinza}
+        \parindent12pt
+    }
+    {
+        \end{colbox}
+    }
+%--------------------------------------    
+\newenvironment{env-aceitar}
+    {
+        \begin{colbox}{\corAceito}
+        \textbf{Foi decidido:}
+        \parindent12pt
+    }
+    {
+        \end{colbox}
+    }
+%--------------------------------------    
+\newenvironment{env-conversar}
+    {
+        \begin{colbox}{\corConversar}
+        \textbf{Precisamos decidir:}
+        \parindent12pt
+    }
+    {
+        \end{colbox}
+    }
+%--------------------------------------    
+\newenvironment{env-rejeitar}
+    {
+        \begin{colbox}{\corRejeitado}
+        \textbf{Foi descartado:}
+        \parindent12pt
+    }
+    {
+        \end{colbox}
+    }
+%--------------------------------------    
+
+
+
+
+%\newcounter{envtodo}[section]
+\newenvironment{envtodo}[2][]
+    {
+        \begin{colbox}{\corNota}
+        \refstepcounter{cmdtodo}\par\medskip
+        \textbf{TODO~\thecmdtodo \xspace ``#2''} \rmfamily
+        \addcontentsline{expcmdtodo}{cmdtodo}{\protect\numberline{\thecmdtodo}#2}\par
+        \parindent12pt
+    }
+    {
+        \end{colbox}
+    }    
+%--------------------------------------    
+    

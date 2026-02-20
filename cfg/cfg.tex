@@ -1,0 +1,94 @@
+% Pacotes
+\usepackage{ae}
+\usepackage{subfigure}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+%\usepackage{xcolor}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{indentfirst}
+
+\usepackage[brazil]{babel}
+\usepackage[none]{hyphenat}
+
+
+\usepackage{imakeidx}
+\usepackage{xspace}
+\usepackage{hyperref}
+ %http://texblog.org/2008/07/13/define-your-own-list-of/
+\usepackage{pdflscape}
+\usepackage{lipsum} 
+%\usepackage[acronym, toc]{glossaries}
+%\makeglossaries
+\usepackage{titlesec}
+%\usepackage{tocloft}
+\usepackage{array}
+\usepackage{blindtext}
+\usepackage{slantsc}
+\usepackage{fontspec}
+
+%Configuracoes
+\setmainfont{Tahoma} 
+\pagestyle{plain}
+\paperwidth=210mm
+\paperheight=297mm
+\topmargin=5mm
+\textheight=247mm
+\footskip=9mm
+\hoffset=-10.4mm 
+\oddsidemargin=15mm
+\evensidemargin=15mm
+\textwidth=155mm
+\marginparsep=0mm
+\marginparwidth=0mm
+\linespread{1.3}
+
+% Definicoes Globais
+\newcommand{\ip}[2]{(#1, #2)}
+\newcommand{\modeloTitulo}{\textbf{Câmara Legislativa do Distrito Federal} \\ Vice-Presidência \\ Coordenadoria de Modernização e Informática - CMI \\ Seção de Administração de Sistemas - SEASI}
+
+% Cabeçalho
+\setlength\headheight{75pt}
+\setlength\voffset{-1 in}
+\setlength\headsep{2mm}
+\newsavebox{\logoLeft}
+\newsavebox{\logoRight}
+\savebox{\logoRight}{\includegraphics[scale = 0.28]{../cfg/logoRIGHT.png}}
+\savebox{\logoLeft}{\includegraphics[scale = 0.28]{../cfg/logoLEFT.png}}
+\pagestyle{fancy}
+\lhead{\usebox{\logoLeft}}
+\chead{\modeloTitulo}
+\rhead{\usebox{\logoRight}}
+\lfoot{}
+%\cfoot{\today}
+\cfoot{www.cl.df.gov.br}
+\rfoot{\thepage\ de  \pageref{LastPage}}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+\pagenumbering{arabic}
+
+%Comandos
+\newsavebox{\selvestebox}
+\newenvironment{colbox}[1]
+  {\newcommand\colboxcolor{#1}%
+   \begin{lrbox}{\selvestebox}%
+   \begin{minipage}{\dimexpr\columnwidth-2\fboxsep\relax}}
+  {\end{minipage}\end{lrbox}%
+   \begin{center}
+   \colorbox[HTML]{\colboxcolor}{\usebox{\selvestebox}}
+   \end{center}}
+
+\input{../cmd/cmd.tex}
+
+\setlength{\arrayrulewidth}{1pt}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.5}

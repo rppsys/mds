@@ -1,0 +1,112 @@
+\section{Atores do Processo}
+\label{sec:cap-atores}
+
+Um ator representa um conjunto coerente de papéis que os usuários do processo desempenham quando de sua execução. Tipicamente, um ator representa um papel que uma entidade desempenha durante a execução de um processo. Nesse contexto, ele é visto como um conjunto de atribuições, funções e/ou responsabilidades que um ator possui.
+
+
+\subsection{CLDF}
+
+A Câmara Legislativa do Distrito Federal (CLDF) é a principal entidade beneficiada pelos sistemas corporativos desenvolvidos usando esta metodologia. 
+
+Sua estrutural organizacional envolve diversas unidades administrativas. A Diretoria de Modernização e Inovação Digital (DMI) é a unidade que tem por finalidade o assessoramento especializado em computação à Mesa Diretora e o contínuo aperfeiçoamento do Sistema de Informação da CLDF. 
+
+Portanto, podemos categorizar as unidades administrativas da CLDF em duas áreas: A área de TI (DMI) e a área não-TI à qual devem pertencer todas as outras unidades. Em computação, o nome que se dá a essa área é Área de Negócio. Trata-se da área de conhecimento onde um sistema será desenvolvido e cuja unidade administrativa será a principal gestora do sistema.
+
+\subsubsection{Área de Negócios (AN)}
+
+Área de negócios é a unidade administrativa da \CLDF que demanda a solução de tecnologia da informação. 
+
+\subsubsubsection{Líder de Negócios (LN)} 
+
+Servidor representante da área de negócios, indicado pela autoridade competente dessa área, com capacidade técnica relacionada à área de negócio em que a mesma atua. 
+
+Dentre as responsabilidades do Líder de Negócios que o diferencia do Líder Técnico (descrito adiante), podemos elencar:
+    
+\begin{itemize}
+	\item Direcionar o projeto sob a perspectiva do negócio, priorizando demandas e alinhando expectativas com as áreas envolvidas e com a Alta Administração;
+	\item Garantir o patrocínio institucional do projeto e sua aderência às diretrizes estratégicas;
+	\item Atuar como representante da área gestora do sistema, fornecendo ou articulando as informações necessárias ao adequado levantamento de requisitos;
+	\item Efetuar o levantamento e a consolidação dos requisitos de negócio, definindo as características e funcionalidades do produto a ser entregue;
+	\item Assegurar que as demandas encaminhadas à empresa contratada estejam alinhadas às necessidades dos usuários e aos objetivos institucionais;
+	\item Validar, ao final de cada Sprint, as funcionalidades entregues sob a perspectiva do negócio, verificando sua aderência aos requisitos definidos;
+	\item Manifestar aceite ou solicitar ajustes nas entregas quanto ao atendimento das regras de negócio, sem prejuízo da avaliação técnica realizada pelo Líder Técnico;
+	\item Homologar as funcionalidades aprovadas para fins de entrada em produção;
+	\item Assinar o termo de recebimento das funcionalidades sob a ótica negocial.
+\end{itemize}    
+
+%\TODO{Colocar isso de Assinar o termo de recebimento no modelo}
+
+\subsubsection{Área de TI (AT)}
+
+Área de Tecnologia da Informação é a unidade setorial ou seccional do SISP, bem como área correlata, responsável por gerir a Tecnologia da Informação na CLDF. Conforme mencionado, no âmbito da \CLDF a área de TI é a \CMI(DMI). 
+
+\subsubsubsection{Líder Técnico (LT)} 
+
+Líder técnico é o servidor representante da área de tecnologia da informação, indicado pela autoridade competente dessa área, com conhecimento técnico relacionado à solução. 
+
+Em relação aos papéis \Scrum, o Líder Técnico é uma das partes interessadas (\emph{stakeholder}) do processo. Embora, em modelos tradicionais, o papel de \PO seja exercido por representante exclusivo da Área de Negócios, a experiência institucional da Câmara Legislativa do Distrito Federal demonstra particularidades relevantes.
+
+Na CLDF, a responsabilidade pelo desenvolvimento e pela sustentação dos sistemas é atribuída à Diretoria de Modernização e Inovação Digital (DMI). Em projetos de maior porte, é incomum a existência de um único servidor da Área de Negócios com visão sistêmica abrangente do produto. Em regra, há a participação de dois ou três servidores representando a área demandante, o que exige coordenação técnica centralizada para assegurar consistência arquitetural, coerência evolutiva e integridade do produto.
+
+Nesse contexto, consolidou-se como prática institucional que o Líder Técnico exerça também o papel de \PO, sendo responsável pelo gerenciamento do \emph{product backlog}, pela harmonização das demandas negociais com as diretrizes técnicas e pela preservação da visão integrada do sistema. Tal arranjo busca garantir continuidade, consistência e qualidade na evolução das soluções desenvolvidas pela CLDF.
+
+Assim, dentre as responsabilidades do Líder Técnico que o diferencia do Líder de Negócios, podemos elencar:
+
+    \begin{itemize}
+		\item Assegurar que o time de desenvolvimento funcione plenamente e com alta produtividade, removendo impedimentos, barreiras e burocracias que comprometam seu desempenho;
+		\item Proteger a equipe de interferências externas e garantir ambiente adequado ao desenvolvimento;
+		\item Estimular a colaboração entre os integrantes do projeto e promover alinhamento contínuo com as áreas envolvidas;
+		\item Garantir que a metodologia esteja sendo corretamente aplicada e que todos os participantes exerçam adequadamente seus papéis;
+		\item Influenciar e orientar o Líder de Negócios, detalhando requisitos em nível técnico e apoiando a priorização do \emph{product backlog};
+		\item Definir, em conjunto com a equipe, as estratégias de desenvolvimento, assegurando coerência arquitetural e aderência aos padrões técnicos da CLDF;
+		\item Acompanhar o time de desenvolvimento, monitorando evolução, riscos e impedimentos;
+		\item Participar dos processos de medição dos serviços, inclusive junto à Fábrica de Métricas;
+		\item Participar dos processos de testes e garantia da qualidade, inclusive junto à Fábrica de Qualidade;
+		\item Avaliar as entregas sob a perspectiva técnica, podendo aceitá-las, rejeitá-las ou solicitar ajustes quanto à qualidade e conformidade com os padrões institucionais;
+		\item Verificar o atingimento dos Níveis Mínimos de Serviço (NMS);
+		\item Assinar a Ordem de Serviço;
+		\item Elaborar e assinar o Termo de Recebimento Provisório;
+		\item Providenciar as evidências de cumprimento ou descumprimento dos SLAs para subsidiar a elaboração do Relatório Técnico de Fiscalização;
+		\item Revisar e assinar o Relatório Técnico de Fiscalização. 
+    \end{itemize}
+
+O Líder Técnico e o Líder de Negócios trabalham juntos representando os interesses da Câmara Legislativa do Distrito Federal no projeto e, por isso, muitas vezes serão chamados de Líderes CLDF.
+
+\subsection{Fábricas}
+
+\subsubsection{Fábrica de Software (FS)}
+
+    Fábrica de software é a entidade contratada
+    formada pelo conjunto de profissionais, recursos materiais, processos e metodologias para o desenvolvimento de softwares, sistemas e aplicações, englobando desde a criação de histórias de usuário, análises de requisitos  até a fase de manutenção. A Fábrica de Software engloba o time de desenvolvimento, o \ScrumMaster e um Representante Técnico, conforme será detalhado nas próximas subseções.
+
+\subsubsubsection{Time de Desenvolvimento da Fábrica de Software}
+
+    O Time de Desenvolvimento consiste de profissionais da fábrica de software contratada que realizam o trabalho de entregar um incremento potencialmente entregável do produto ``Pronto'' ao final de cada \Sprint. 
+    
+\subsubsubsection{\ScrumMaster da Fábrica de Software}
+
+    \ScrumMaster da fábrica de software é o profissional da fábrica de  software contratada que atua segundo as características anteriormente descritas na seção \ref{sec:conceitos-sm}. Ele trabalha em conjunto com o time de desenvolvimento e realiza o trabalho de entregar um incremento potencialmente liberável do produto ``Pronto'' ao final de cada Sprint.
+    
+\subsubsubsection{Representante Técnico da Fábrica de Software}
+    Representante da fábrica de software, responsável por atuar como interlocutor principal junto à área de tecnologia de informação, incumbido de receber, diligenciar, encaminhar e responder as principais questões técnicas, legais e administrativas referentes aos softwares que estiverem sendo desenvolvidos.
+    
+    Não deve-se confundir o Representante Técnico da Fábrica de Software com o \ScrumMaster da fábrica de software. O primeiro atua na esfera técnica, legal e administrativa enquanto o \ScrumMaster deve fazer parte do time de desenvolvimento da fábrica de software. 
+    
+\subsubsection{Fábrica de Métricas (FM)}
+
+Entidade responsável pela prestação dos serviços de medição dos sistemas. 
+
+\subsubsubsection{Representante Técnico da Fábrica de Métricas}
+
+Representante da fábrica de métricas, responsável por atuar como interlocutor principal junto à área de tecnologia de informação, incumbido de receber, diligenciar, encaminhar e responder as principais questões técnicas, legais e administrativas referentes aos softwares que estiverem sendo avaliados em relação a aspectos de medição.
+
+\subsubsection{Fábrica de Qualidade (FQ)}
+
+Entidade responsável pela prestação dos serviços de controle da qualidade de sistemas. 
+
+\subsubsubsection{Representante Técnico da Fábrica de Qualidade}
+
+Representante da fábrica de qualidade, responsável por atuar como interlocutor principal junto à área de tecnologia de informação, incumbido de receber, diligenciar, encaminhar e responder as principais questões técnicas, legais e administrativas referentes aos softwares que estiverem sendo avaliados em relação a aspectos de qualidade.
+
+%\clearpage
+%\newpage

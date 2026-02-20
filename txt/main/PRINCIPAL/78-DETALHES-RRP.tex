@@ -1,0 +1,150 @@
+%########################################
+% DETALHES RRP
+%########################################
+
+\subsection{Subprocesso Realizar Reuniões de Planejamento}
+\label{sec:det-rrp}
+%########################################
+\DETALHAR
+{Evento}
+{Sinal de Início}
+{tar:det-rrp-sinal-inicio}
+{\corTipoEventoInicio}
+{fig/det-sinalinicio.jpg}
+{
+Sinal de início do processo ``Realizar Reuniões de Planejamento''.
+}
+{
+\msnone
+}    
+{
+\msnone
+}
+{
+\msnone
+}    
+{
+}    
+{Evento ``Recebimento de Demanda''}
+{tar:det-pdas-sinal-final}
+{Processo ``Realizar Reuniões TI e Negócios''}
+{tar:det-rrp-pro-rrtn}
+{}
+{OK}
+%########################################
+\DETALHAR
+{Processo}
+{Realizar Reuniões TI e Negócios}
+{tar:det-rrp-pro-rrtn}
+{\corTipoProcesso}
+{fig/det-pro.jpg}
+{
+    Reunir os \emph{stakeholders} da Área de TI e da Área de Negócios para definir quem fará o papel de Líder Técnico e o papel de Líder de Negócios. Além disso, já começar a elaborar os primeiros itens do \PB.
+}
+{
+\msi \emph{Stakeholders} Área de TI
+
+\msi \emph{Stakeholders} Área de Negócios
+}    
+{
+\msi PEI
+
+\msi PDTI
+
+\msi Demanda Interna
+
+\msi Contratos
+}
+{
+\msi Documento de Definição de Líder Técnico e Líder de Negócios
+
+\msi \PB Inicial
+
+\msi Atas de Reunião
+}    
+{
+}    
+{Evento ``Sinal de Início''}
+{tar:det-rrp-sinal-inicio}
+{Processo ``Realizar Reuniões entre CLDF e Fábricas''}
+{tar:det-rrp-pro-rrcf}
+{}
+{OK}
+
+%########################################
+\DETALHAR
+{Processo}
+{Realizar Reuniões CLDF e Fábricas (FS e FQ)}
+{tar:det-rrp-pro-rrcf}
+{\corTipoProcesso}
+{fig/det-pro.jpg}
+{
+     Reunir os recém definidos Líderes CLDF (Técnico e de Negócio) com os representantes das Fábricas de Software e Qualidade para definir que outros artefatos serão necessários em cada fase do projeto (planejamento, desenvolvimento e encerramento); elaborar e entregar quaisquer artefatos de planejamento que forem julgados necessários; revisar e atualizar o \PB inicial.
+}
+{
+\iLT
+
+\iLN
+
+\iRS
+
+\iRQ
+}    
+{
+\msi PEI
+
+\msi PDTI
+
+\msi Demanda Interna
+
+\msi Contratos
+
+\msi \PB inicial
+}
+{
+\msi Documento de Definição de Artefatos
+
+\msi Artefatos de Planejamento
+
+\msi \PB
+
+\msi Atas de Reunião
+}    
+{
+    
+}    
+{Processo ``Realizar Reuniões entre TI e Negócios''}
+{tar:det-rrp-pro-rrtn}
+{Evento ``Sinal de Fim''}
+{tar:det-rrp-sinal-final}
+{}
+{OK}
+
+%########################################
+\DETALHAR
+{Evento}
+{Sinal de Fim}
+{tar:det-rrp-sinal-final}
+{\corTipoEventoFinal}
+{fig/det-sinalfinal.jpg}
+{
+    Sinal de finalização do processo.
+}
+{
+\msnone
+}    
+{
+\msnone
+}
+{
+\msnone
+}    
+{
+}    
+{Processo ``Realizar Reuniões CLDF e Fábricas (FS e FQ)''}
+{tar:det-rrp-pro-rrcf}
+{\msnone}
+{tar:det-rrp-sinal-final}
+{}
+{OK}
+%########################################

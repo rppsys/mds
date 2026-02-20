@@ -1,0 +1,408 @@
+%########################################
+% DETALHES PDAS
+%########################################
+\subsection{Processo de Desenvolvimento Ágil de Software}
+\label{sec:det-pdas}
+
+O PDAS apresenta processos e subprocessos semelhantes que ``se repetem'' nas três fases do fluxo principal: planejamento, desenvolvimento e encerramento. Por exemplo, o Subprocesso ``Realizar Ateste Técnico'' ocorre nessas três fases. No entanto, o leitor deve entender que embora o processo seja o mesmo, as situações em que ele é utilizado são distintas. O que é atestado na fase de planejamento é diferente do que é atestado na fase de desenvolvimento. Assim, para simplificar, processos como este, que ocorrem várias vezes em situações diferentes mas que apresentam a mesma função, foram apresentados uma única vez neste documento.
+
+%########################################
+\DETALHAR
+{Evento}
+{Recebimento de Demanda}
+{tar:det-pdas-evento-rd}
+{\corTipoEventoInicio}
+{fig/det-msginicio.jpg}
+{
+Este é um evento de início. Ele significa que a ``vontade'' de iniciar um novo projeto, seja ele um sistema novo ou a manutenção de um software pré-existente, de acordo com a classificação de demandas,  ``manifestou-se'' na Área de TI. Não importa onde essa demanda ``nasceu''. O que importa é que a Área de TI recepcionou essa demanda e as condições para iniciar o desenvolvimento são satisfeitas.}
+{
+\iAT
+
+\iAN
+}    
+{
+\msi PEI
+
+\msi PDTI
+
+\msi Contratos
+
+\msi Demanda Interna
+}
+{
+\msi Convocação de Reuniões de Planejamento
+}    
+{
+    \textbf{Outras informações:}
+
+    Sugere-se que primeiro sejam convocadas reuniões internas entre a Área de TI e a Área de Negócios e depois sejam realizadas reuniões com as Fábricas. O processo de realização de reuniões é detalhado no Subprocesso ``Realizar Reuniões de Planejamento'' (seção \ref{sec:det-rrp}).
+    
+    A convocação de uma reunião geralmente é formalizada por meio de um e-mail destinado aos interessados. Mas pode ocorrer de outras formas como, por exemplo, um memorando.
+}    
+{\msnone}
+{tar:det-pdas-evento-rd}
+{Subprocesso ``Realizar Reuniões de Planejamento''}
+{tar:det-pdas-sub-rrp}
+{}
+{OK}
+
+%########################################
+\DETALHAR
+{Subprocesso}
+{Realizar Reuniões de Planejamento}
+{tar:det-pdas-sub-rrp}
+{\corTipoSubprocesso}
+{fig/det-sub.jpg}
+{
+Definir formalmente os Líderes CLDF (Técnico e de Negócios), definir os artefatos que serão usados e exigidos nas fases de planejamento, desenvolvimento e encerramento e elaborar os artefatos de planejamento.
+}
+{
+\iAT
+
+\iAN
+
+\iFS
+
+\iFQ
+}    
+{
+\msi PEI
+
+\msi PDTI
+
+\msi Demandas Internas
+
+\msi Contratos
+}
+{
+\msi Definição dos Líderes
+
+\msi Documento de Visão
+
+\msi \PB inicial
+
+\msi Definição de artefatos para cada fase
+
+\msi Artefatos de Planejamento
+
+\msi Atas de Reunião
+}    
+{
+    \textbf{Outras informações:}
+
+    A seção \ref{sec:reuniaoPlanejamento} apresenta um detalhamento melhor de como deve ser feito essas reuniões e os resultados esperados delas.  Este processo pode ser expandido em detalhes conforme seção \ref{sec:det-rrp}.
+}    
+{Evento de Início ou Sanções}
+{tar:det-pdas-evento-rd}
+{Subprocesso ``Realizar Ateste Técnico''}
+{tar:det-pdas-sub-rat}
+{}
+{OK}
+
+%########################################
+\DETALHAR
+{Subprocesso}
+{Realizar Ateste Técnico}
+{tar:det-pdas-sub-rat}
+{\corTipoSubprocesso}
+{fig/det-sub.jpg}
+{
+As saídas do subprocesso anterior são avaliadas e validadas.
+}
+{
+\iLT
+
+\iFQ
+
+\iFM
+}    
+{
+\msi Entregáveis
+
+\msi Pacotes de Produtos
+
+\msi Atas de Reunião
+}
+{
+\msi Decisão de Validação
+}    
+{
+    \textbf{Outras informações:}
+
+    Este processo é expandido em subprocessos de acordo o detalhamento apresentado na seção \ref{sec:det-rat}.
+
+}    
+{
+\msi Subprocesso ``Realizar Reuniões de Planejamento'' ou
+
+\msi Subprocesso ``SPRINT'' ou
+
+\msi Subprocesso ``Realizar Reuniões de Encerramento''
+}
+{tar:det-pdas-sub-rrp}
+{Decisão: ``Ateste Técnico foi Validado?''}
+{tar:det-pdas-evento-rd}
+{}
+{OK}
+
+%########################################
+\DETALHAR
+{Decisão}
+{Validado?}
+{tar:det-pdas-dec-validado}
+{\corTipoDecisao}
+{fig/det-dec.jpg}
+{
+Decidir, com base nos resultados da fase, se os entregáveis aderem aos requisitos de entrada e aos planos e regras definidos.
+}
+{
+\iLT
+
+\iLN
+}    
+{
+\msi Resultados do Processo ``Realizar Ateste Técnico''
+}
+{
+\textbf{SIM} \msi Processo ``Realizar Aceitação da Fase''
+
+\textbf{NÃO} \msi Processo ``Verificar Aplicação de Sanções''
+}    
+{
+}    
+{Subprocesso ``Realizar Ateste Técnico''}
+{tar:det-pdas-sub-rat}
+{VER SAÍDAS}
+{tar:det-pdas-evento-rd}
+{}
+{OK}
+%########################################
+\DETALHAR
+{Processo}
+{Verificar Aplicação de Sanções}
+{tar:det-pdas-pro-vas}
+{\corTipoProcesso}
+{fig/det-pro.jpg}
+{
+Analisar os desvios gerados na fase e decidir sobre a aplicação de sanções e/ou encaminhamento de demandas de correção.
+}
+{
+\iLT
+
+\iLN
+}    
+{
+\msi Documentos de Validação
+
+\msi Contratos
+}
+{
+\msi Sanções e/ou Glosas
+}    
+{
+}    
+{DECISÃO (SAÍDA \textbf{NÃO})}
+{tar:det-pdas-dec-validado}
+{
+\msi Subprocesso ``Realizar Reuniões de Planejamento'' ou
+
+\msi Subprocesso ``SPRINT'' ou
+
+\msi Subprocesso ``Realizar Reuniões de Encerramento''
+}
+{tar:det-pdas-sub-sprint}
+{}
+{OK}
+%########################################
+\DETALHAR
+{Processo}
+{Realizar Aceitação da Fase}
+{tar:det-pdas-pro-raf}
+{\corTipoProcesso}
+{fig/det-pro.jpg}
+{
+    Realizar a aceitação formal da fase de forma a prosseguir para a fase posterior do PDAS.
+}
+{
+\iLT
+
+\iLN
+
+\msi Gestor do Contrato
+}    
+{
+\msi Documentos de Validação
+}
+{
+\msi Artefatos da fase
+}    
+{
+    \textbf{Outras informações:}
+
+    O aceite da fase pode ser formalizado com um ``Termo de Aceite da Fase'' caso tenha-se acordado o uso desse artefato nas reuniões de planejamento.
+}    
+{DECISÃO (SAÍDA \textbf{SIM})}
+{tar:det-pdas-dec-validado}
+{
+\msi Subprocesso ``Sprint'' ou
+
+\msi Decisão ``Haverá outra Sprint?'' ou
+
+\msi Final do Processo
+}
+{tar:det-pdas-evento-rd}
+{
+\begin{envtodo}{Verificar coisas relativas ao contrato}
+    Incluir o Ator Gestor do Contrato? Fiscal do Contrato? 
+    
+    Quais são as saídas disso?
+\end{envtodo}
+}
+{Pendencia}
+%########################################
+\DETALHAR
+{Subprocesso}
+{Sprint}
+{tar:det-pdas-sub-sprint}
+{\corTipoSubprocesso}
+{fig/det-sub.jpg}
+{
+ Realizar o ciclo de trabalho de desenvolvimento de um incremento do produto.
+}
+{
+\iLT
+
+\iLN
+
+\iFS
+}    
+{
+\msi Sinal proveniente do aceite da fase de planejamento (subprocesso “Realizar Aceitação da Fase)”.
+}
+{
+\msi Incremento do Produto
+
+\msi Outros Artefatos de Desenvolvimento
+}    
+{
+    \textbf{Outras informações:}
+
+    O processo de desenvolvimento é dividido em ciclos regulares ao longo do tempo. Uma \Sprint é,
+portanto, um ciclo de desenvolvimento onde requisitos são implementados tendo como resultado um
+incremento do produto ``pronto''. Conforme o guia, cada \Sprint pode ser considerada um projeto com horizonte não maior que um mês. Como os projetos, as \Sprints são utilizadas para realizar algo. Cada \Sprint tem uma meta do que é para ser construído, um plano previsto e flexível que irá guiar a construção, o trabalho e o produto resultante do incremento. Este processo é detalhado em subprocessos na seção \ref{sec:det-sprint}.
+}    
+{Processo ``Realizar Aceitação da Fase (Planejamento)''}
+{tar:det-pdas-processo-raf}
+{
+\emph{Gateway} de ativação incondicional em paralelo:
+
+\msi Subprocesso ``Realizar Ateste Técnico''
+
+\msi Decisão ``Haverá outra Sprint?''
+}
+{tar:det-pdas-dec-hos}
+{}
+{OK}
+%########################################
+\DETALHAR
+{Decisão}
+{Haverá outra Sprint?}
+{tar:det-pdas-dec-hos}
+{\corTipoDecisao}
+{fig/det-dec.jpg}
+{
+Decidir se uma nova \Sprint será necessária ou se o software será encerrado.
+}
+{
+\iLT
+
+\iLN
+}    
+{
+\msi Resultados do Processo ``Realizar Aceitação da Fase''
+}
+{
+\textbf{SIM} \msi Subprocesso ``\Sprint''
+
+\textbf{NÃO} \msi Processo ``Realizar Reunião de Encerramento''
+}    
+{
+}    
+{
+\msi \emph{Gateway} de ativação incondicional em paralelo
+
+\msi Processo ``Realizar Aceitação da Fase''
+}
+{tar:det-pdas-pro-raf}
+{VER SAÍDAS}
+{tar:det-pdas-pro-rre}
+{}
+{Ok}
+%########################################
+
+\DETALHAR
+{Processo}
+{Realizar Reunião de Encerramento}
+{tar:det-pdas-pro-rre}
+{\corTipoProcesso}
+{fig/det-pro.jpg}
+{
+ Entrega de artefatos de encerramento e realização de atividades pertinentes.
+}
+{
+\iLT
+
+\iLN
+
+\iFS
+
+\iFQ
+
+\iFM
+}    
+{
+\msi Software desenvolvido
+}
+{
+\msi Artefatos de Encerramento
+}    
+{
+    \textbf{Outras informações:}
+
+    Vide seção \ref{sec:reuniaoEncerramento} para uma descrição mais detalhada da reunião de encerramento.
+
+}    
+{Decisão: ``Haverá outra Sprint?''}
+{tar:det-pdas-dec-hos}
+{Subprocesso ``Realizar Ateste Técnico''}
+{tar:det-pdas-sub-rat}
+{}
+{OK}
+
+%########################################
+\DETALHAR
+{Evento}
+{Final do Processo}
+{tar:det-pdas-evento-fim}
+{\corTipoEventoFinal}
+{fig/det-eventofinal.jpg}
+{
+Este evento indica que o processo chegou ao fim.
+}
+{
+\msnone
+}    
+{
+\msnone
+}
+{
+\msnone
+}    
+{
+}    
+{Processo ``Realizar Aceitação da Fase''}
+{tar:det-pdas-pro-raf}
+{\msnone}
+{tar:det-pdas-evento-fim}
+{}
+{OK}

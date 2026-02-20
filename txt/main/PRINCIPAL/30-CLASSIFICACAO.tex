@@ -1,0 +1,60 @@
+\section{Classificação de Demandas}
+\label{sec:cap-demandas}
+
+As demandas por desenvolvimento de sistemas serão divididas em tipos:
+
+\setlength{\columnsep}{0.2in}
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item Sistema Novo
+        \item Manutenção Evolutiva
+        \item Manutenção Corretiva
+        \item Refatoração
+    \end{enumerate}
+\end{multicols}
+
+\subsection{Sistema novo}
+
+    Serão considerados neste tipo de demanda os projetos de:
+    
+    \begin{enumerate}
+        \item Sistema a ser integralmente desenvolvido;
+
+        \item Sistema reconstruído a partir de um legado;
+    
+        \item Sistema desenvolvido a partir de outros sistemas pré-existentes, em todo ou em parte, que nunca entraram em produção;
+        
+        \item Sistema desenvolvido a partir de um ou mais sistemas de outro(s) órgão(s) ou entidade(s), cujo código fonte foi, em todo ou em parte, cedido ou repassado à CLDF, ou obtido por outros meios.
+    \end{enumerate}
+
+\subsection{Manutenção evolutiva}
+
+Manutenção evolutiva aborda as mudanças em requisitos funcionais da aplicação, ou seja, a inclusão de
+novas funcionalidades, alteração ou exclusão de funcionalidades em aplicações implantadas \cite{roteirosisp2016}. 
+
+A Manutenção Adaptativa, Perfectiva e Cosmética são tipos de Manutenção Evolutiva.
+
+\subsection{Manutenção corretiva}
+
+Manutenção corretiva é a intervenção em um sistema cujas funcionalidades passaram a apresentar defeito,
+afetando sua qualidade funcional, executada para mantê-lo em estado operacional. 
+
+É importante destacar
+que as demandas por manutenção corretiva precisam ser atendidas com urgência.
+
+Caso o sistema esteja em garantia, sob responsabilidade da empresa que o desenvolveu, esta será
+acionada para suas devidas correções, nas condições e prazos estabelecidos; nesse caso, a manutenção
+corretiva será considerada acionamento da garantia.
+
+\subsection{Refatoração}
+
+%https://www.trt9.jus.br/pds/pdstrt9/guidances/concepts/refactoring_1B63BA3B.html
+
+A refatoração é uma forma disciplinada de reestruturar o código quando pequenas mudanças são feitas 
+nele para melhorar o design. Um aspecto importante de uma refatoração é que ela melhora o design sem mudar o comportamento do design; uma refatoração não adiciona nem remove funcionalidade \cite{fowler2018}. 
+Nesta metodologia, a refatoração é uma demanda de adequação do sistema, 
+a fim de alterar uma funcionalidade que já foi implementada, entregue e validada. 
+A alteração ou adequação do sistema para finalizar uma funcionalidade que necessite ser 
+implementada 
+em mais de uma Sprint não será considerada uma refatoração.
+    

@@ -1,0 +1,82 @@
+\section{Fluxo do Processo}
+\label{sec:cap-fluxo}
+
+As próximas seções irão apresentar o fluxo do Processo de Desenvolvimento Ágil de Software para guiar a interação entre os atores da CLDF e das Fábricas contratadas. Iniciamos apresentando o macro fluxo principal e depois apresentamos os subprocessos envolvidos.
+
+\begin{landscape}
+    \begin{figure}[htbp]
+    \thispagestyle{empty}
+    \begin{center}
+        \includegraphics[scale=0.58]{fig/BPMN-PDAS.png}
+    \end{center}
+    \caption{Processo de Desenvolvimento Ágil de Software (PDAS)}
+    \label{fig-pgds}
+    \end{figure}
+\end{landscape}
+
+\subsection{Processo de Desenvolvimento Ágil de Software}
+\label{sec:fluxo-pgds}
+
+A figura \ref{fig-pgds} apresenta o \PDAS que se divide nas fases de Planejamento, Desenvolvimento e Encerramento.
+
+O processo se inicia na Fase de Planejamento com o ``Recebimento da Demanda'' e segue para o ``\nameref{sec:fluxo-rrp}'' onde as reuniões de planejamento são realizadas e os artefatos de planejamento são elaborados e definidos.
+
+Depois ele segue para o ``\nameref{sec:fluxo-rat}'' onde os artefatos de planejamento elaborados são validados. Se eles forem válidos, o processo segue para o subprocesso ``Realizar Aceitação da Fase''. Se não, o processo segue para o subprocesso ``Verificar Aplicação de Sanções''. O primeiro realiza a aceitação da fase de planejamento, enquanto o último verifica se cabem sanções, aplica-as e encaminha o processo para que sejam realizados novas reuniões de planejamento de sorte que os artefatos sejam reavaliados, corrigidos e completados.
+
+Após o aceite da fase de planejamento, o processo segue para a Fase de Desenvolvimento. É nesta fase que os \emph{sprints} de desenvolvimento serão realizados. Dessa forma, os artefatos de saída do \nameref{sec:fluxo-sprint} também passarão pelo \nameref{sec:fluxo-rat} e pelo processo de validação tal qual ocorreu com os artefatos de planejamento da fase anterior. A diferença é que o subprocesso ``Realizar Aceitação da Fase'' pode aceitar a \emph{sprint} como válida, mas mesmo assim exigir que uma nova \emph{sprint} seja realizada. E haverão tantas \emph{sprints} quanto forem necessárias até que se decida que não são necessárias mais \emph{sprints} de desenvolvimento.
+
+Em seguida, o processo chega na Fase de Encerramento. Nesta fase realiza-se uma ``Reunião de Encerramento'' que deve gerar ``Artefatos de Encerramento''. Novamente ocorre um ciclo de ateste técnico e validação até a aceitação da fase ser realizada e o processo chegar ao seu fim. 
+
+\subsection{Subprocesso Sprint}
+\label{sec:fluxo-sprint}
+
+    \begin{figure}[htb]
+    \begin{center}
+        \includegraphics[scale=0.5]{fig/BPMN-SPRINT.png}
+    \end{center}
+    \caption{Subprocesso Sprint}
+    \label{fig-sprint}
+    \end{figure}
+
+A figura \ref{fig-sprint} apresenta o subprocesso \emph{Sprint} que é onde a Fábrica de Software realiza o desenvolvimento do sistema propriamente dito. 
+
+O processo começa com a ``Reunião de Planejamento da Sprint''. Esta é uma reunião onde a \emph{Sprint Backlog} para esta \emph{sprint} será definida.
+
+Em seguida ocorrem duas atividades em paralelo: Enquanto a fábrica de software desenvolve e entrega os entregáveis definidos na reunião, os líderes da CLDF (TI e Negócios) acompanham esse desenvolvimento.
+
+Finalmente, o processo termina após a realização da ``Reunião de Encerramento da Sprint''.
+
+
+\subsection{Subprocesso Realizar Ateste Técnico}
+\label{sec:fluxo-rat}
+
+    \begin{figure}[ht]
+    \begin{center}
+        \includegraphics[scale=0.5]{fig/BPMN-RAT.png}
+    \end{center}
+    \caption{Subprocesso Realizar Ateste Técnico}
+    \label{fig-rat}
+    \end{figure}
+
+Já na figura \ref{fig-rat} apresentamos o subprocesso que ilustra como os atestes técnicos das diversas fases são realizados. 
+Basicamente são dois tipos de ateste: Serviço de Medição e Serviço de Qualidade. Sua realização não é obrigatória e a decisão de realizar esses serviços, ou não, é tomada pelos líderes de TI e Negócios.
+
+\subsection{Subprocesso Realizar Reuniões de Planejamento}
+\label{sec:fluxo-rrp}
+
+    \begin{figure}[ht]
+    \begin{center}
+        \includegraphics[scale=0.5]{fig/BPMN-RRP.png}
+    \end{center}
+    \caption{Subprocesso Realizar Reuniões de Planejamento}
+    \label{fig-rrp}
+    \end{figure}
+
+O Subprocesso Realizar Reuniões de Planejamento é mostrado na figura \ref{fig-rrp}. Inicialmente, uma ou mais reuniões entre as Áreas de TI e de Negócios da \CLDF são necessárias para que estas áreas definam seus respectivos líderes. Nessas reuniões as Histórias de Usuário do ``Product Backlog'' já podem começar a ser criadas. 
+
+Em seguida, deve-se preparar uma ou mais reuniões entre os líderes da CLDF e os representantes das Fábricas de Software e de Qualidade. Essas reuniões deverão gerar os ``Artefatos de Planejamento''. Esses artefatos são acordos, como por exemplo, critérios de aceitação de qualidade, etc. 
+
+Quando todos os artefatos forem definidos, o subprocesso se encerra. 
+
+
+

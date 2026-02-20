@@ -1,0 +1,354 @@
+%########################################
+% DETALHES RAT
+%########################################
+
+\subsection{Subprocesso Realizar Ateste Técnico}
+\label{sec:det-rat}
+
+%########################################
+
+
+\DETALHAR
+{Evento}
+{Sinal de Início}
+{tar:det-rat-sinal-inicio}
+{\corTipoEventoInicio}
+{fig/det-sinalinicio.jpg}
+{
+Sinal de início do processo ``Realizar Ateste Técnico''.
+}
+{
+\msnone
+}    
+{
+\msnone
+}
+{
+\msnone
+}    
+{
+}    
+{Sinal de Fim do Subprocesso ``\Sprint''}
+{tar:det-sprint-sinal-final}
+{Processo ``Receber Entregáveis''}
+{tar:det-rat-pro-re}
+{}
+{OK}
+
+%########################################
+\DETALHAR
+{Processo}
+{Receber Entregáveis}
+{tar:det-rat-pro-re}
+{\corTipoProcesso}
+{fig/det-pro.jpg}
+{
+    Receber os entregáveis definidos para a fase na forma e no formato definidos para posterior análise de sua aderência aos padrões, requisitos e critérios de aceitação acordados.
+}
+{
+\iLT
+}    
+{
+\msi Entregáveis
+}
+{
+\msi Decisão
+}    
+{
+    \textbf{Outras informações:}
+
+    Cabe ressaltar que, segundo o critério de completude, o processo não prevê a aceitação parcial de entregáveis.
+}    
+{Processo ``Receber Entregáveis''}
+{tar:det-rat-pro-re}
+{Decisão ``Todos os produtos entregues?''}
+{tar:det-rat-dec-tpe}
+{}
+{OK}
+%########################################
+\DETALHAR
+{Decisão}
+{Todos os produtos entregues?}
+{tar:det-rat-dec-tpe}
+{\corTipoDecisao}
+{fig/det-dec.jpg}
+{
+    Verificar se todos os produtos especificados para a fase foram entregues.
+}
+{
+\iLT
+}    
+{
+\msi Entregáveis
+}
+{
+\textbf{SIM} \msi \emph{Gateway} de decisões: 
+
+$\Longrightarrow$ Decisão ``Será preciso medir?''
+
+$\Longrightarrow$ Decisão ``Será preciso testar?''
+
+\textbf{NÃO} \msi Aciona evento de fim e dispara sinal para Processo ``Verificar Aplicação de Sanções''
+}    
+{
+}    
+{Processo ``Receber Entregáveis''}
+{tar:det-rat-pro-re}
+{
+VER SAÍDAS
+}
+{tar:det-rat-dec-spm}
+{}
+{OK}
+%########################################
+\DETALHAR
+{Decisão}
+{Será precido medir?}
+{tar:det-rat-dec-spm}
+{\corTipoDecisao}
+{fig/det-dec.jpg}
+{
+    Verificar necessidade de realizar medições relacionadas às entregas da fase.    
+}
+{
+\iLT
+}    
+{
+\msi Entregáveis
+}
+{
+\textbf{SIM} \msi Processo ``Solicitar Serviço de Medição''
+
+\textbf{NÃO} \msi \emph{Gateway} de convergência \msi Processo ``Realizar Ateste Técnico''
+}    
+{
+    \textbf{Outras informações:}
+
+    Caso a decisão de saída seja negativa, o processo entra em um \emph{gateway} de ativação incondicional em paralelo de convergência, ou seja, ele espera todos os processos em paralelo finalizarem para seguir para o próximo processo, neste caso, o Processo ``Realizar Ateste Técnico''.
+}    
+{
+Decisão ``Todos os produtos entregues?'' \msi \textbf{SIM}
+}
+{tar:det-rat-dec-tpe}
+{VER SAÍDAS}
+{tar:det-rat-pro-ssm}
+{}
+{OK}
+%########################################
+\DETALHAR
+{Processo}
+{Solicitar Serviço de Medição}
+{tar:det-rat-pro-ssm}
+{\corTipoProcesso}
+{fig/det-pro.jpg}
+{
+    Acionar o serviço técnico de medição de sistemas.
+}
+{
+\iLT
+}    
+{
+\msi Decisão ``Será preciso medir?'' \textbf{SIM}
+}
+{
+\msi Solicitação de Serviço de Medição de Sistema
+}    
+{
+}    
+{Decisão ``Será preciso medir?''}
+{tar:det-rat-dec-spm}
+{Processo ``Executar Serviço de Medição de Sistema''}
+{tar:det-rat-pro-esms}
+{}
+{OK}
+%########################################
+\DETALHAR
+{Processo}
+{Executar Serviço de Medição de Sistemas}
+{tar:det-rat-pro-esms}
+{\corTipoProcesso}
+{fig/det-pro.jpg}
+{
+    Executar o serviço técnico de medição de sistemas.
+}
+{
+\iFM
+}    
+{
+\msi Solicitação de Serviço de Medição de Sistemas
+}
+{
+\msi Pacote de Produtos de Medição de Sistemas
+}    
+{
+    \textbf{Outras informações:}
+
+    Segundo o modelo atual, o serviço técnico de medição de sistemas será realizado por fornecedor externo contratado especificamente para tal finalidade (Fábrica de Métricas), segundo padrões de qualidade pré-definidos.
+}    
+{Processo ``Solicitar Serviço de Medição''}
+{tar:det-rat-pro-ssm}
+{
+\emph{Gateway} de convergência \msi Processo ``Realizar Ateste Técnico''
+}
+{tar:det-rat-pro-rat}
+{}
+{OK}
+%########################################
+\DETALHAR
+{Decisão}
+{Será preciso testar?}
+{tar:det-rat-dec-spt}
+{\corTipoDecisao}
+{fig/det-dec.jpg}
+{
+    Verificar necessidade de realizar testes e outros serviços de avaliação de qualidade relacionados às entregas da fase.
+}
+{
+\iLT
+}    
+{
+\msi Entregáveis
+}
+{
+\textbf{SIM} \msi Processo ``Solicitar Serviço de Qualidade''
+
+\textbf{NÃO} \msi \emph{Gateway} de convergência \msi Processo ``Realizar Ateste Técnico''
+}    
+{
+    \textbf{Outras informações:}
+
+    Da mesma forma, caso a decisão de saída seja negativa, o processo entra em um \emph{gateway} de ativação incondicional de convergência aguardando a finalização de todos os demais processos que estiverem sendo realizados em paralelo para só então seguir para o Processo ``Realizar Ateste Técnico''.
+}    
+{
+Decisão ``Todos os produtos entregues?'' \msi \textbf{SIM}
+}
+{tar:det-rat-dec-tpe}
+{VER SAÍDAS}
+{tar:det-rat-pro-ssq}
+{}
+{OK}
+%########################################
+\DETALHAR
+{Processo}
+{Solicitar Serviço de Qualidade}
+{tar:det-rat-pro-ssq}
+{\corTipoProcesso}
+{fig/det-pro.jpg}
+{
+    Acionar o serviço técnico de testes de sistemas e controle de qualidade.
+}
+{
+\iLT
+}    
+{
+\msi Decisão ``Será preciso testar?'' \textbf{SIM}
+}
+{
+\msi Solicitação de Serviço de Controle de Qualidade
+}    
+{
+}    
+{Decisão ``Será preciso testar?''}
+{tar:det-rat-pro-spt}
+{Processo ``Executar Serviço de Controle de Qualidade''}
+{tar:det-rat-pro-escq}
+{}
+{OK}
+%########################################
+\DETALHAR
+{Processo}
+{Executar Serviço de Controle de Qualidade}
+{tar:det-rat-pro-escq}
+{\corTipoProcesso}
+{fig/det-pro.jpg}
+{
+    Executar o serviço técnico de testes de sistemas e controle de qualidade;
+}
+{
+\iFQ
+}    
+{
+\msi Solicitação de Serviço de Controle de Qualidade
+}
+{
+\msi Pacote de Produtos de Testes de Sistemas e Controle de Qualidade
+}    
+{
+    Segundo o modelo atual, o serviço técnico de testes de sistemas e controle de qualidade será realizado por fornecedor externo contratado especificamente para tal finalidade (Fábrica de Qualidade), segundo padrões de qualidade pré-definidos.
+}    
+{Processo ``Solicitar Serviço de Qualidade''}
+{tar:det-rat-pro-ssq}
+{
+\emph{Gateway} de convergência \msi Processo ``Realizar Ateste Técnico''
+}
+{tar:det-rat-pro-rat}
+{}
+{OK}
+%########################################
+\DETALHAR
+{Processo}
+{Realizar Ateste Técnico}
+{tar:det-rat-pro-rat}
+{\corTipoProcesso}
+{fig/det-pro.jpg}
+{
+    Realizar o ateste técnico propriamente dito ao analisar o conjunto de produtos recebidos. 
+}
+{
+\iLT
+}    
+{
+\msi Entregáveis
+
+\msi Pacotes de Produtos
+
+\msi Atas de Reunião
+}
+{
+\msi Sinal de Fim do Processo
+}    
+{
+    \textbf{Outras informações:}
+
+    Os produtos recebidos no Processo ``Receber Produtos'' são avaliados e validados utilizando, quando disponível, as saídas da Fábrica de Métricas e Fábrica de Qualidade. Essa avaliação e validação consiste no ateste técnico propriamente dito. A Decisão ``Validado?'' do macro processo principal é respondida com base nesse ateste e o fluxo prosseguirá conforme o PDAS.     
+}    
+{
+\emph{Gateway} de convergência
+}
+{tar:det-rat-dec-tpe}
+{Sinal de Fim}
+{tar:det-rat-sinal-final}
+{}
+{OK}
+
+
+%########################################
+
+\DETALHAR
+{Evento}
+{Sinal de Fim}
+{tar:det-rat-sinal-final}
+{\corTipoEventoFinal}
+{fig/det-sinalfinal.jpg}
+{
+    Sinal de finalização do processo.
+}
+{
+\msnone
+}    
+{
+\msnone
+}
+{
+\msnone
+}    
+{
+}    
+{Processo ``Realizar Ateste Técnico''}
+{tar:det-rat-pro-rat}
+{\msnone}
+{tar:det-rat-sinal-final}
+{}
+{OK}
+
+%########################################

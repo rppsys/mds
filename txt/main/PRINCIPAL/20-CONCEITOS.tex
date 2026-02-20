@@ -1,0 +1,150 @@
+\section{Conceitos}
+\label{sec:cap-conceitos}
+
+    O intuito desta seção é apresentar alguns conceitos básicos necessários para se compreender o processo de desenvolvimento ágil elaborado para atender as necessidades da Câmara Legislativa do Distrito Federal.
+    
+\subsection{Modelos Ágeis}
+
+    Agilidade é a capacidade de se adaptar a mudanças de requisitos, de equipe e de tecnologia. Um processo ágil é necessário quando os requisitos e prioridades são instáveis, quando tanto o projeto e a construção são realizados simultaneamente ou quando durante o planejamento as fases de análise, projeto, implementação e testes não são tão previsíveis.
+    
+    Modelos ágeis começaram a aparecer a partir do ano de 2001 quando um grupo de 17 especialistas se reuniram na estação de ski \emph{Snowbird}, em Utah, nos Estados Unidos, para discutir maneiras de desenvolver software de uma forma mais leve, rápida e centrada em pessoas \cite{prikladnicki2014}. Eles cunharam os termos ``Desenvolvimento Ágil de Software'' e ``Métodos Ágeis'' e criaram o Manifesto Ágil apresentado a seguir: 
+    
+    \begin{env-cinza}
+    \textbf{Manifesto Ágil}
+        \begin{quote}
+            ``Estamos descobrindo maneiras melhores de desenvolver software, fazendo-o nós mesmos e ajudando outros a fazerem o mesmo. Através deste trabalho, passamos a valorizar:
+            
+                \begin{enumerate}
+                    \item Indivíduos e interações mais que processos e ferramentas;
+                    \item Software em funcionamento mais que documentação abrangente;
+                    \item Colaboração com o cliente mais que negociação de contratos;
+                    \item Responder a mudanças mais que seguir um plano.
+                \end{enumerate}
+            
+            Ou seja, mesmo havendo valor nos itens à direita, valorizamos mais os itens à esquerda.''
+        \end{quote}
+    \end{env-cinza}
+    
+    A partir de então surgiram diversos modelos ágeis, dentre os quais podemos elencar: XP (\emph{eXtreme Programming}), ASD (\emph{Adaptative Software Development}), DSDM (\emph{Dynamic Systems Development Method}), FDD (\emph{Feature Driven Development}), \emph{Kanban}, \emph{Crystal} e o \SCRUM. Esse último tem sido utilizado por organizações tanto públicas como privadas para desenvolver sistemas. A próxima seção apresenta de forma resumida o \emph{framework} \Scrum: principal referência do Processo de Desenvolvimento Ágil de Software (PDAS) apresentado nesse documento.
+    
+\subsection{Framework Scrum} \label{sec:scrum}
+    Ken Schwaber e Jeff Sutherland são os criadores do \Scrum. Esse método ágil
+    é descrito no famoso guia ``\emph{Scrum Guide} - Um guia definitivo para o Scrum: As regras do Jogo'' \cite{scrumguide2017}. De acordo com esse guia, o \Scrum é um \emph{framework} para desenvolver, entregar e manter produtos complexos. Seu uso não se limita na gestão e desenvolvimento de software, mas para gerenciar quase tudo que usamos em nosso dia-dia, como indivíduos e sociedades. Particularmente, no âmbito do desenvolvimento ágil de software, o \Scrum têm sido utilizado por diversas instituições públicas devido à sua efetividade e eficiência para tratar e resolver problemas complexos e adaptativos, enquanto entrega produtos com o mais alto valor possível para a organização. 
+    
+    De acordo com \citeasnoun{prikladnicki2014}, o \Scrum distribui a gestão entre três papéis: O \PO(PO), o \SM e o Time de Desenvolvimento. Cada papel \Scrum possui um conjunto de responsabilidades bem definidas de forma a evitar conflitos entre os envolvidos no projeto. Os referidos papéis \Scrum serão descritos nas próximas seções.
+
+    \subsubsection{Papel \Scrum \PO (PO)}
+    
+        O \PO (PO) representa os interesses dos \emph{stakeholders} de negócio e deve ter conhecimento suficiente do negócio para responder aos questionamentos da equipe de desenvolvimento. É o responsável pelo Retorno de Investimento (ROI) e pela macrogestão do projeto. Representa todos os interessados.
+    
+        As características e as atividades recomendadas para que o \PO desempenhe com sucesso o seu papel são: 
+    
+        \begin{itemize}
+        	\item Conhecer o processo de negócio e seus objetivos;
+        	\item Ser o maior interessado no prazo;
+        	\item Ser representativo para o produto;
+        	\item Ter conhecimento e poder suficiente para tomar decisões rápidas e adequadas;
+        	
+        	\item Gerenciar as expectativas dos \emph{stakeholders} entendendo suas necessidades e gerenciando expectativas e conflitos;
+        	
+        	\item Gerenciar o produto decidindo o que vai para o       	   	 \hyperref[sec:art-pb]{\emph{product backlog}}
+        	e, igualmente importante, o que não vai;
+        	\item Único que pode alterar o \emph{product backlog};
+        	\item Ordena os itens para entregar o valor mais elevado;
+        	\item Melhora continuamente a qualidade das
+        	\hyperref[sec:art-us]{histórias de usuário};
+        	\item Trabalhar em equipe e colaborar com o time de desenvolvimento;
+        	\item Realiza, com o Time de Desenvolvimento, o planejamento da \Sprint e colabora sempre que necessário (refinamento);
+        	\item Participa das reuniões diárias (opcional);
+        	\item Não interfere no planejamento já realizado;
+        	\item Realiza o feedback apenas quando for solicitado;
+        	\item Aceitar mudanças;
+        	
+        	%\TODO{COMO?}
+        	
+        	\item Aceitar ou rejeitar as entregas na reunião de encerramento da \Sprint. 
+        	
+        	\item Realiza a homologação do incremento do Produto;
+        	
+        	%\TODO{Sprint Review?}
+        	
+        	\item Ter iniciativa;
+        	
+        	\item Estar sempre acessível e disponível para tomar decisões e esclarecer dúvidas. 
+        \end{itemize}    
+        
+    \subsubsection{Papel \emph{Scrum Master}}
+    \label{sec:conceitos-sm}
+    
+    O \ScrumMaster é um facilitador para o trabalho do time de \Scrum, ou seja, dos membros do time de desenvolvimento e do \PO. Ele promove a autonomia, a boa relação de trabalho e a comunicação entre os membros do time de \Scrum no seu dia a dia, de forma a se tornarem cada vez mais efetivos. 
+    
+    As características e as atividades recomendadas para que o \ScrumMaster desempenhe com sucesso o seu papel são: 
+    
+    \begin{itemize}
+    	\item Facilitador hábil;
+    	\item Garante o uso do \Scrum;
+    	\item Responsável por garantir que os valores, práticas e regras do \Scrum estejam sendo entendidos e seguidos por todo o time;
+    	\item Promover mudanças organizacionais necessárias;
+    	\item Atuar como um agente de mudanças na organização onde está inserido o time de \Scrum. Ou seja, ele trabalha para promover as mudanças no contexto do time de \Scrum necessárias para que a equipe possa realizar seu trabalho com mais efetividade;
+    	\item Remover impedimentos organizacionais e administrativos;
+    	\item Facilitador de eventos;
+    	\item Além de facilitar o dia a dia de trabalho do time de \Scrum, o \ScrumMaster tem a importante função de atuar como um facilitador nos eventos do \Scrum. Ele estimula os envolvidos a participarem ativamente das discussões, ajuda-os a manter o foco nos objetivos do evento e a chegarem a suas próprias conclusões.
+    \end{itemize}
+    
+    \subsubsection{Time de Desenvolvimento}
+    \label{sec:conceitos-time}
+    
+    O Time de Desenvolvimento é um grupo multidisciplinar de pessoas responsáveis por realizar o trabalho de desenvolvimento do sistema. A partir das prioridades definidas pelo \PO, o Time de Desenvolvimento gera, em cada \emph{Sprint}, um incremento do produto ``pronto'', de acordo com a
+    ``\hyperref[sec:art-defpronto]{Definição de Pronto}'', e que significa valor 
+    visível para os clientes do projeto.
+    
+    O Time de Desenvolvimento gerencia o seu trabalho de desenvolvimento ou manutenção do sistema. É ele que determina tecnicamente como o produto será desenvolvido, planeja esse trabalho e acompanha seu progresso. Para tal, tem propriedade e autoridade sobre suas decisões e, ao mesmo tempo, é responsável e responsabilizado por seus resultados.
+    
+    Para realizar esse trabalho, o Time de Desenvolvimento:
+    
+    \begin{itemize}
+    	\item Planeja seu trabalho, definindo com o \PO o que será realizado no decorrer da \Sprint, para então detalhar, de forma autônoma, como esse trabalho será realizado;
+    	\item Realiza as tarefas de desenvolvimento do produto para atingir a Meta da \Sprint, garantindo a qualidade do que é produzido, além de acompanhar seu progresso no \Sprint em direção a essa meta;
+    	\item Interage com o \PO, sempre que necessário, para ter dúvidas esclarecidas ou solicitar decisões quanto ao produto, e colabora com ele para refinar e aprimorar o \PB, preparando-o para o próximo \Sprint;
+    	\item Identifica e informa ao \ScrumMaster sobre impedimentos que obstruam seu trabalho e previne-se deles, quando possível;
+    	\item Obtém \emph{feedback} dos clientes do projeto e demais partes interessadas sobre o trabalho realizado durante e ao final da \Sprint;
+    	\item Entrega valor com frequência para os clientes do projeto na forma de ``Incremento de Produto'';
+    	
+    	\item O Time de Desenvolvimento é:
+    	\begin{itemize}
+    		\item Multidisciplinar, possuindo todas as habilidades e conhecimentos necessários para gerar, em cada \Sprint, o ``Incremento do Produto'' ``Pronto'', de acordo com a ``Definição de Pronto'';
+    		\item Auto-organizado, planejando e executando seu trabalho com autonomia, propriedade e responsabilidade;
+    		\item Suficientemente pequeno (de 3 a 9 pessoas), de forma que seus membros se comuniquem efetivamente e se auto organizem, sendo capazes de produzir incrementos do produto prontos que representem valor visível para os clientes;
+    		\item Motivado, uma vez que possua o ambiente, apoio e a confiança necessários para realizar seu trabalho;
+    		\item Orientado à excelência técnica, buscando sempre aprender e realizar seu trabalho com qualidade e consciência;
+    		\item Focado nas metas estabelecidas junto ao \PO.
+    	\end{itemize}
+\end{itemize}
+
+    Esses papéis interagem entre si durante o ciclo de desenvolvimento \Scrum participando de eventos, produzindo e utilizando artefatos diversos durante ciclos iterativos onde os incrementos do produto são desenvolvidos.
+
+    \subsubsection{Ciclo de desenvolvimento \Scrum}
+
+    \begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[scale=0.45]{fig/conceito-scrum.jpg}
+    \end{center}
+    \caption{Ciclo do Scrum}
+    \label{fig-scrum}
+    \end{figure}   
+    
+    A figura \ref{fig-scrum} apresenta o ciclo de desenvolvimento \Scrum de forma simplificada. Inicialmente o \PO define a ``Visão do Produto'' que representa sua necessidade e é o que deve ser satisfeito no fim do projeto. 
+    
+    Em seguida, o \PO, com auxílio do \SM, cria uma lista inicial de necessidades que precisam ser produzidas para que a visão do projeto seja bem sucedida. Essa lista é denominada de \PB. Ela consiste de histórias de usuário priorizadas pelo \PO. 
+    
+    A seguir ocorre a reunião ``Planejamento da Sprint'', ou seja, antes de iniciar cada iteração (\Sprint) o time deve se reunir e definir o que deverá ser entregue ao final do ciclo. Essa reunião tem duas fases geralmente com 4h de duração cada uma. Na primeira fase, o \PO deverá definir a meta da \Sprint e expor para o time os itens mais prioritários do \PB. O time, por sua vez, deve estimar os itens em tamanho e definir o que acredita que pode ser implementado dentro da \Sprint. Essa listagem é chamada de \emph{Selected Product Backlog}. Na segunda fase, o time deverá colher mais detalhes do \emph{Selected Product Backlog} e decompô-los em tarefas gerando assim o artefato \emph{Sprint Backlog}. Tanto na primeira quanto na segunda fase dessa reunião o \SM deve atuar como facilitador.
+    
+    Dessa forma, segue-se com a realização da \Sprint, que é um período de 2 a 4 semanas em que o time vai desenvolver o incremento potencialmente entregável do produto. Durante a \Sprint deverão ocorrer reuniões diárias entre os membros da equipe de desenvolvimento. Essas reunião são conhecidas como ``Scrums Diárias'', ou simplesmente ``Reuniões Diárias''. Essas reuniões devem durar no máximo 15 minutos e é o momento em que cada membro responde aos outros membros as perguntas: O que eu fiz desde a última Scrum Diária? O que pretendo fazer até a próxima Scrum Diária? Existe algo me impedindo de concluir alguma tarefa? Havendo problemas, a equipe se auto-organiza para resolvê-los. Aqueles problemas que a equipe não se considera apta para resolver são classificados como impedimentos e repassados para o \SM resolver.
+    
+    Ao final da \Sprint, ocorre uma outra reunião denominada ``Revisão da \Sprint''. Nessa reunião, com duração máxima de 4 horas, o time deve apresentar os resultados para o \PO avaliar se a meta foi ou não atingida. Nessa reunião o \PO também pode fazer anotações que poderão se tornar novos itens do \PB.
+    
+    Há uma segunda e ultima reunião denominada ``Retrospectiva da \Sprint'' com duração máxima de 3 horas mediada pelo \SM. Essa é uma reunião para o time avaliar lições aprendidas, identificar o que foi bom e o que deve ser melhorado. Esta reunião representa a proposta do espírito de inspeção-adaptação do \SCRUM e caso o time concorde, pode haver a participação do \PO.
+    
+    Em suma, o ciclo de desenvolvimento original do \emph{framework} \Scrum discutido anteriormente foi adaptado e adequado à realidade institucional da Câmara Legislativa do Distrito Federal resultando no Processo de Desenvolvimento Ágil de Software cujo fluxo será apresentado no próximo capítulo.
+    
+    

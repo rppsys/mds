@@ -1,0 +1,158 @@
+% ##################################        
+% ----------------------------------
+%             COMANDOS
+% ----------------------------------        
+% ##################################        
+\newcommand{\DV}[1]{\colorbox{orange}{\textbf{Dúvida}: #1}}
+
+\newcommand{\WR}[1]{
+    \begin{center}
+    \colorbox{red}{#1}
+    \end{center}
+}
+
+\newcommand{\CB}[1]{
+    \begin{center}
+    \textbf{#1}
+    \end{center}
+}
+
+% ----------------------------------    
+
+% ##################################        
+% ----------------------------------
+%         AFAZERES
+% ----------------------------------        
+% ##################################        
+
+
+%\newcommand{\listadetodos}{Lista de Afazeres}
+%\newlistof{cmdtodo}{expcmdtodo}{\listadetodos}
+
+%\newcounter{cmdtodo}[]
+%\newcommand{\TODO}[1]
+%    {
+%        \refstepcounter{cmdtodo}\par\medskip
+%        \begin{center}
+%        \colorbox{blue!10}{
+%                \textbf{TODO~\thecmdtodo}: #1
+%        }
+%        \end{center}
+%        
+%        \addcontentsline{expcmdtodo}{cmdtodo}{\protect\numberline{\thecmdtodo}#1}\par
+%        
+%    }
+% ----------------------------------    
+%\newcommand{\PRIOR}[1]
+%    {
+%        \refstepcounter{cmdtodo}\par\medskip
+%        \begin{center}
+%        \colorbox{red!10}{
+%                \textbf{PRIOR~\thecmdtodo}: #1
+%        }
+%        \end{center}
+%        
+%        \addcontentsline{expcmdtodo}{cmdtodo}{\protect\numberline{\thecmdtodo} \textbf{PRIORIDADE}: #1}\par
+%        
+%    }    
+%
+% ##################################        
+% ----------------------------------
+%         NIVEIS EXTRAS
+% ----------------------------------        
+% ##################################        
+
+% titlesec
+% https://tex.stackexchange.com/questions/60209/how-to-add-an-extra-level-of-sections-with-headings-below-subsubsection
+
+\titleclass{\subsubsubsection}{straight}[\subsection]
+
+\newcounter{subsubsubsection}[subsubsection]
+\renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
+\renewcommand\theparagraph{\thesubsubsubsection.\arabic{paragraph}} % optional; useful if paragraphs are to be numbered
+
+\titleformat{\subsubsubsection}
+  {\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{}
+\titlespacing*{\subsubsubsection}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{5}{\z@}%
+  {3.25ex \@plus1ex \@minus.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries}}
+\renewcommand\subparagraph{\@startsection{subparagraph}{6}{\parindent}%
+  {3.25ex \@plus1ex \@minus .2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries}}
+\def\toclevel@subsubsubsection{4}
+\def\toclevel@paragraph{5}
+\def\toclevel@paragraph{6}
+\def\l@subsubsubsection{\@dottedtocline{4}{7em}{4em}}
+\def\l@paragraph{\@dottedtocline{5}{10em}{5em}}
+\def\l@subparagraph{\@dottedtocline{6}{14em}{6em}}
+\makeatother
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+% ##################################        
+% ----------------------------------
+%           DETALHAMENTO
+% ----------------------------------        
+% ##################################        
+
+% Comando usado para criar o detalhamento dos processos
+\newcommand{\DETALHAR}[9]{
+    \def\DetalharArgI{#1} 
+    \def\DetalharArgII{#2} 
+    \def\DetalharArgIII{#3} 
+    \def\DetalharArgIV{#4} 
+    \def\DetalharArgV{#5} 
+    \def\DetalharArgVI{#6} 
+    \def\DetalharArgVII{#7} 
+    \def\DetalharArgVIII{#8} 
+    \def\DetalharArgIX{#9} 
+    \DETALHARCOMANDO
+}
+
+\newcommand{\DETALHARCOMANDO}[7]{
+    %Tipo: \DetalharArgI
+    %Nome: \DetalharArgII
+    %Hypertarget: \DetalharArgIII
+    %Cor: \DetalharArgIV
+    %Fig: \DetalharArgV
+    %Objetivo: \DetalharArgVI
+    %Participantes: \DetalharArgVII
+    %Entradas: \DetalharArgVIII
+    %Saídas: \DetalharArgIX
+    %Outros: #1
+    %AnteriorNome: #2
+    %AnteriorLink: #3
+    %PosteriorNome: #4
+    %PosteriorLink: #5
+    %Introducao: #6
+    %Terminei: #7
+    
+    \subsubsection{\DetalharArgI: ``\DetalharArgII''} 
+
+    \begin{tabular}{|*{2}{m{0.4\textwidth}||}}
+        \hline
+            \rowcolor{\DetalharArgIV} \multicolumn{2}{|c|}{\hypertarget{\DetalharArgIII}{\large \DetalharArgI: ``\DetalharArgII'' \normalsize}} \\ \hline \hline
+            \begin{center}
+                \includegraphics[width=0.15\textwidth]{\DetalharArgV}
+                
+                \small \DetalharArgII \normalsize
+            \end{center} 
+            &
+            \textbf{Objetivo:} \DetalharArgVI \\  \hline
+            \textbf{PARTICIPANTES} & \DetalharArgVII \\ \hline
+            \textbf{ENTRADAS} & \DetalharArgVIII \\ \hline
+            \textbf{SAÍDAS} & \DetalharArgIX \\ \hline \hline
+            \rowcolor{\DetalharArgIV} \small \hyperlink{#3}{\msleftarrow \textbf{ATIVIDADE ANTERIOR}} \normalsize & \small \hyperlink{#5}{\textbf{PRÓXIMA ATIVIDADE} \msrightarrow} \normalsize \\ \hline
+            #2 & #4 \\ \hline
+    \end{tabular}
+    
+    \vspace{2mm}
+    #1
+}

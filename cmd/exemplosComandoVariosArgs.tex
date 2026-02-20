@@ -1,0 +1,56 @@
+% Definicao do Comando
+
+\newcommand{\TESTEVARIOS}[9]{
+    \def\argI{#1} 
+    \def\argII{#2} 
+    \def\argIII{#3} 
+    \def\argIV{#4} 
+    \def\argV{#5} 
+    \def\argVI{#6} 
+    \def\argVII{#7} 
+    \def\argVIII{#8} 
+    \def\argIX{#9} 
+    \TESTEVARIOSC
+}
+
+\newcommand{\TESTEVARIOSC}[2]{
+    Teste Varios
+
+   Arg1: \argI
+    
+   Arg2: \argII
+    
+   Arg3: \argIII
+    
+   Arg4: \argIV
+    
+   Arg5: \argV
+    
+   Arg6: \argVI
+    
+   Arg7: \argVII
+    
+   Arg8: \argVIII
+    
+   Arg9: \argIX
+    
+   Arg10:  #1
+    
+   Arg11:  #2
+}
+
+
+% E aqui o uso no corpo do texto:
+
+\TESTEVARIOS
+{1}
+{2}
+{3}
+{4}
+{5}
+{6}
+{7}
+{8}
+{9}
+{10}
+{11}
