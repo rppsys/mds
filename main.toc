@@ -101,24 +101,26 @@
 \contentsline {subsection}{\numberline {8.3}Subprocesso Realizar Ateste Técnico}{52}{subsection.8.3}%
 \contentsline {subsubsection}{\numberline {8.3.1}Evento: ``Sinal de Início''}{52}{subsubsection.8.3.1}%
 \contentsline {subsubsection}{\numberline {8.3.2}Processo: ``Receber Entregáveis''}{53}{subsubsection.8.3.2}%
-\contentsline {subsubsection}{\numberline {8.3.3}Decisão: ``Todos os produtos entregues?''}{54}{subsubsection.8.3.3}%
-\contentsline {subsubsection}{\numberline {8.3.4}Decisão: ``Será precido medir?''}{55}{subsubsection.8.3.4}%
-\contentsline {subsubsection}{\numberline {8.3.5}Processo: ``Solicitar Serviço de Medição''}{56}{subsubsection.8.3.5}%
-\contentsline {subsubsection}{\numberline {8.3.6}Processo: ``Executar Serviço de Medição de Sistemas''}{56}{subsubsection.8.3.6}%
-\contentsline {subsubsection}{\numberline {8.3.7}Decisão: ``Será preciso testar?''}{57}{subsubsection.8.3.7}%
-\contentsline {subsubsection}{\numberline {8.3.8}Processo: ``Solicitar Serviço de Qualidade''}{58}{subsubsection.8.3.8}%
-\contentsline {subsubsection}{\numberline {8.3.9}Processo: ``Executar Serviço de Controle de Qualidade''}{58}{subsubsection.8.3.9}%
-\contentsline {subsubsection}{\numberline {8.3.10}Processo: ``Realizar Ateste Técnico''}{59}{subsubsection.8.3.10}%
-\contentsline {subsubsection}{\numberline {8.3.11}Evento: ``Sinal de Fim''}{60}{subsubsection.8.3.11}%
-\contentsline {subsection}{\numberline {8.4}Subprocesso Realizar Reuniões de Planejamento}{60}{subsection.8.4}%
-\contentsline {subsubsection}{\numberline {8.4.1}Evento: ``Sinal de Início''}{60}{subsubsection.8.4.1}%
-\contentsline {subsubsection}{\numberline {8.4.2}Processo: ``Realizar Reuniões TI e Negócios''}{61}{subsubsection.8.4.2}%
-\contentsline {subsubsection}{\numberline {8.4.3}Processo: ``Realizar Reuniões CLDF e Fábricas (FS e FQ)''}{62}{subsubsection.8.4.3}%
-\contentsline {subsubsection}{\numberline {8.4.4}Evento: ``Sinal de Fim''}{63}{subsubsection.8.4.4}%
-\contentsline {section}{\numberline {9}Normas Complementares}{64}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Normas Complementares para Contagem de Pontos de Função}{64}{subsection.9.1}%
-\contentsline {subsubsection}{\numberline {9.1.1}Reunião de Mediação de Divergência de Aferição de Pontos de Função}{64}{subsubsection.9.1.1}%
-\contentsline {section}{\numberline {10}Considerações Finais}{64}{section.10}%
-\contentsline {section}{DOCUMENTOS DE DIRETRIZES}{65}{section.10}%
-\contentsline {section}{\numberline {A}Afazeres}{67}{appendix.A}%
-\contentsline {subsection}{\numberline {A.1}Revisões}{67}{subsection.A.1}%
+\contentsline {subsubsection}{\numberline {8.3.3}Decisão: ``Todos os produtos entregues?''}{53}{subsubsection.8.3.3}%
+\contentsline {subsubsection}{\numberline {8.3.4}Decisão: ``Será precido medir?''}{54}{subsubsection.8.3.4}%
+\contentsline {subsubsection}{\numberline {8.3.5}Processo: ``Solicitar Serviço de Medição''}{55}{subsubsection.8.3.5}%
+\contentsline {subsubsection}{\numberline {8.3.6}Processo: ``Executar Serviço de Medição de Sistemas''}{55}{subsubsection.8.3.6}%
+\contentsline {subsubsection}{\numberline {8.3.7}Decisão: ``Será preciso testar?''}{56}{subsubsection.8.3.7}%
+\contentsline {subsubsection}{\numberline {8.3.8}Processo: ``Solicitar Serviço de Qualidade''}{57}{subsubsection.8.3.8}%
+\contentsline {subsubsection}{\numberline {8.3.9}Processo: ``Executar Serviço de Controle de Qualidade''}{57}{subsubsection.8.3.9}%
+\contentsline {subsubsection}{\numberline {8.3.10}Processo: ``Realizar Ateste Técnico''}{58}{subsubsection.8.3.10}%
+\contentsline {subsubsection}{\numberline {8.3.11}Evento: ``Sinal de Fim''}{58}{subsubsection.8.3.11}%
+\contentsline {subsection}{\numberline {8.4}Subprocesso Realizar Reuniões de Planejamento}{59}{subsection.8.4}%
+\contentsline {subsubsection}{\numberline {8.4.1}Evento: ``Sinal de Início''}{59}{subsubsection.8.4.1}%
+\contentsline {subsubsection}{\numberline {8.4.2}Processo: ``Realizar Reuniões TI e Negócios''}{60}{subsubsection.8.4.2}%
+\contentsline {subsubsection}{\numberline {8.4.3}Processo: ``Realizar Reuniões CLDF e Fábricas (FS e FQ)''}{61}{subsubsection.8.4.3}%
+\contentsline {subsubsection}{\numberline {8.4.4}Evento: ``Sinal de Fim''}{62}{subsubsection.8.4.4}%
+\contentsline {section}{\numberline {9}Normas Complementares}{63}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Normas Complementares para Contagem de Pontos de Função}{63}{subsection.9.1}%
+\contentsline {subsubsection}{\numberline {9.1.1}Divergência de Aferição de Pontos de Função}{63}{subsubsection.9.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.2}Reunião de Mediação de Divergência de Aferição de Pontos de Função}{63}{subsubsection.9.1.2}%
+\contentsline {subsubsection}{\numberline {9.1.3}Decisão}{63}{subsubsection.9.1.3}%
+\contentsline {section}{\numberline {10}Considerações Finais}{63}{section.10}%
+\contentsline {section}{DOCUMENTOS DE DIRETRIZES}{64}{section.10}%
+\contentsline {section}{\numberline {A}Afazeres}{66}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Revisões}{66}{subsection.A.1}%
