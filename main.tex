@@ -4,7 +4,6 @@
 % Configurações
 \input{cfg.tex}
 
-
 \title{%
 	\textbf{Metodologia de Desenvolvimento de \\ Sistemas (MDS)} \\
 	Processo de Desenvolvimento Ágil de Software \\ (PDAS)	
@@ -41,8 +40,11 @@
 \clearpage
 \newpage
 
-\renewcommand*\contentsname{Sumário}
-\tableofcontents
+{
+	\setlength{\parskip}{0pt}
+	\renewcommand*\contentsname{Sumário}
+	\tableofcontents
+}
 
 % Listas
 %\clearpage
@@ -53,29 +55,7 @@
 \clearpage
 \newpage
 
-
-
-
-
-%\input{txt/main/PRINCIPAL/NADA.tex}
-%\input{txt/main/PRINCIPAL/10-INTRODUCAO.tex}
-%\input{txt/main/PRINCIPAL/20-CONCEITOS.tex}
-%\input{txt/main/PRINCIPAL/25-FLUXOGRAMAS.tex}
-%\input{txt/main/PRINCIPAL/30-CLASSIFICACAO.tex}
-%\input{txt/main/PRINCIPAL/40-ATORES.tex}
-%\input{txt/main/PRINCIPAL/50-CERIMONIAS.tex}
-%\input{txt/main/PRINCIPAL/60-ARTEFATOS.tex}
-%\input{txt/main/PRINCIPAL/70-DETALHES.tex}
-%\input{txt/main/PRINCIPAL/75-NORMATIVOS.tex}
-%\input{txt/main/PRINCIPAL/80-CONCLUSOES.tex}
-%\input{txt/main/PRINCIPAL/90-ANEXOS.tex}
-
-
-
-
-
-
-
+\input{txt/main/PRINCIPAL/00-HISTORICO.tex}
 \input{txt/main/PRINCIPAL/10-INTRODUCAO.tex}
 \input{txt/main/PRINCIPAL/20-CONCEITOS.tex}
 \input{txt/main/PRINCIPAL/25-FLUXOGRAMAS.tex}
@@ -88,11 +68,7 @@
 \input{txt/main/PRINCIPAL/80-CONCLUSOES.tex}
 \input{txt/main/PRINCIPAL/90-ANEXOS.tex}
 
-
-
-
-
-\input{txt/main/AFAZERES.tex}
+%\input{txt/main/AFAZERES.tex}
 %\input{txt/main/SUGESTOES.tex}
 %\input{txt/main/DUVIDAS.tex}
 %\input{txt/main/EXEMPLOS.tex}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.16)  23 FEB 2026 17:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.16)  26 FEB 2026 11:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -700,24 +700,24 @@ File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -783,40 +783,40 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 15.
+Package hyperref Info: Link coloring OFF on input line 14.
  (main.out) (main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-Package hyperref Info: *** compatibility with harvard ****  on input line 15.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 22
+Package hyperref Info: *** compatibility with harvard ****  on input line 14.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 21
 .
 
 (C:\Users\Ronie\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
 
 
 (C:\Users\Ronie\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
 
 
 (C:\Users\Ronie\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 22
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 21
 .
 
 (C:\Users\Ronie\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<fig/brasaoCLDF.png, id=504, 184.69pt x 256.96pt>
+<fig/brasaoCLDF.png, id=496, 184.69pt x 256.96pt>
 File: fig/brasaoCLDF.png Graphic file (type png)
 <use fig/brasaoCLDF.png>
-Package pdftex.def Info: fig/brasaoCLDF.png  used on input line 24.
+Package pdftex.def Info: fig/brasaoCLDF.png  used on input line 23.
 (pdftex.def)             Requested size: 184.68953pt x 256.95937pt.
 
 [1
@@ -840,15 +840,7 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.54834pt}.
 
-[3]
-
-Package fancyhdr Warning: \headheight is too small (75.0pt): 
-(fancyhdr)                Make it at least 75.54834pt, for example:
-(fancyhdr)                \setlength{\headheight}{75.54834pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.54834pt}.
-
-[4])
+[3])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
@@ -860,7 +852,39 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.54834pt}.
 
-[5] (txt/main/PRINCIPAL/10-INTRODUCAO.tex) (txt/main/PRINCIPAL/20-CONCEITOS.tex
+[4] (txt/main/PRINCIPAL/00-HISTORICO.tex
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+[]|\T1/cmr/m/n/10 Atualizações para
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+\T1/cmr/m/n/10 TR Fábrica de
+ []
+
+
+Overfull \hbox (2.96436pt too wide) in paragraph at lines 13--19
+ [][] 
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 40--41
+[]\T1/cmr/m/n/10 Criação do capítulo []9[] ``[]Normas Complementares[]'' destin
+ado à consolidação das normas
+ []
+
+) (txt/main/PRINCIPAL/10-INTRODUCAO.tex
+
+Package fancyhdr Warning: \headheight is too small (75.0pt): 
+(fancyhdr)                Make it at least 75.54834pt, for example:
+(fancyhdr)                \setlength{\headheight}{75.54834pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.54834pt}.
+
+[5
+
+
+]) (txt/main/PRINCIPAL/20-CONCEITOS.tex
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
 (fancyhdr)                Make it at least 75.54834pt, for example:
@@ -900,7 +924,7 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.54834pt}.
 
 [9]
-<fig/conceito-scrum.jpg, id=708, 960.58875pt x 420.82219pt>
+<fig/conceito-scrum.jpg, id=705, 960.58875pt x 420.82219pt>
 File: fig/conceito-scrum.jpg Graphic file (type jpg)
 <use fig/conceito-scrum.jpg>
 Package pdftex.def Info: fig/conceito-scrum.jpg  used on input line 130.
@@ -922,7 +946,7 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.54834pt}.
 
 [11 <./fig/conceito-scrum.jpg>]
-<fig/BPMN-PDAS.png, id=721, 1263.97218pt x 447.92343pt>
+<fig/BPMN-PDAS.png, id=718, 1263.97218pt x 447.92343pt>
 File: fig/BPMN-PDAS.png Graphic file (type png)
 <use fig/BPMN-PDAS.png>
 Package pdftex.def Info: fig/BPMN-PDAS.png  used on input line 10.
@@ -935,7 +959,7 @@ Overfull \hbox (30.32132pt too wide) in paragraph at lines 10--11
 [12
 
  <./fig/BPMN-PDAS.png>]
-<fig/BPMN-SPRINT.png, id=734, 861.9703pt x 502.87875pt>
+<fig/BPMN-SPRINT.png, id=731, 861.9703pt x 502.87875pt>
 File: fig/BPMN-SPRINT.png Graphic file (type png)
 <use fig/BPMN-SPRINT.png>
 Package pdftex.def Info: fig/BPMN-SPRINT.png  used on input line 35.
@@ -951,12 +975,12 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 [13
 
  <./fig/BPMN-SPRINT.png>]
-<fig/BPMN-RAT.png, id=744, 865.73438pt x 583.42969pt>
+<fig/BPMN-RAT.png, id=741, 865.73438pt x 583.42969pt>
 File: fig/BPMN-RAT.png Graphic file (type png)
 <use fig/BPMN-RAT.png>
 Package pdftex.def Info: fig/BPMN-RAT.png  used on input line 55.
 (pdftex.def)             Requested size: 432.86613pt x 291.71413pt.
-<fig/BPMN-RRP.png, id=746, 586.44093pt x 469.755pt>
+<fig/BPMN-RRP.png, id=743, 586.44093pt x 469.755pt>
 File: fig/BPMN-RRP.png Graphic file (type png)
 <use fig/BPMN-RRP.png>
 Package pdftex.def Info: fig/BPMN-RRP.png  used on input line 69.
@@ -1026,7 +1050,7 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.54834pt}.
 
 [19]) (txt/main/PRINCIPAL/50-CERIMONIAS.tex
-<fig/cer-reunioes.jpg, id=792, 385.44pt x 286.1892pt>
+<fig/cer-reunioes.jpg, id=789, 385.44pt x 286.1892pt>
 File: fig/cer-reunioes.jpg Graphic file (type jpg)
 <use fig/cer-reunioes.jpg>
 Package pdftex.def Info: fig/cer-reunioes.jpg  used on input line 6.
@@ -1065,7 +1089,7 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 
 [23]) (txt/main/PRINCIPAL/60-ARTEFATOS.tex
 (txt/main/PRINCIPAL/62-ARTEFATOS-SCRUM.tex
-<fig/artefato-docvisao2.jpg, id=839, 628.3475pt x 591.20876pt>
+<fig/artefato-docvisao2.jpg, id=836, 628.3475pt x 591.20876pt>
 File: fig/artefato-docvisao2.jpg Graphic file (type jpg)
 <use fig/artefato-docvisao2.jpg>
 Package pdftex.def Info: fig/artefato-docvisao2.jpg  used on input line 13.
@@ -1079,13 +1103,13 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.54834pt}.
 
 [24 <./fig/artefato-docvisao2.jpg>]
-<fig/artefato-productbacklog.jpg, id=847, 628.3475pt x 628.3475pt>
+<fig/artefato-productbacklog.jpg, id=844, 628.3475pt x 628.3475pt>
 File: fig/artefato-productbacklog.jpg Graphic file (type jpg)
 <use fig/artefato-productbacklog.jpg>
 Package pdftex.def Info: fig/artefato-productbacklog.jpg  used on input line 46
 .
 (pdftex.def)             Requested size: 110.25443pt x 110.25009pt.
-<fig/artefato-sprintbacklog.jpg, id=848, 471.26062pt x 313.17pt>
+<fig/artefato-sprintbacklog.jpg, id=845, 471.26062pt x 313.17pt>
 File: fig/artefato-sprintbacklog.jpg Graphic file (type jpg)
 <use fig/artefato-sprintbacklog.jpg>
 Package pdftex.def Info: fig/artefato-sprintbacklog.jpg  used on input line 62.
@@ -1116,12 +1140,12 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.54834pt}.
 
 [27]
-<fig/ARTEFATO-USERSTORY1.png, id=874, 359.84438pt x 319.94531pt>
+<fig/ARTEFATO-USERSTORY1.png, id=871, 359.84438pt x 319.94531pt>
 File: fig/ARTEFATO-USERSTORY1.png Graphic file (type png)
 <use fig/ARTEFATO-USERSTORY1.png>
 Package pdftex.def Info: fig/ARTEFATO-USERSTORY1.png  used on input line 207.
 (pdftex.def)             Requested size: 198.45662pt x 176.45865pt.
-<fig/ARTEFATO-USERSTORY2.png, id=875, 357.58594pt x 319.94531pt>
+<fig/ARTEFATO-USERSTORY2.png, id=872, 357.58594pt x 319.94531pt>
 File: fig/ARTEFATO-USERSTORY2.png Graphic file (type png)
 <use fig/ARTEFATO-USERSTORY2.png>
 Package pdftex.def Info: fig/ARTEFATO-USERSTORY2.png  used on input line 210.
@@ -1729,7 +1753,7 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.54834pt}.
 
 [32]
-<fig/art-grafburndown1.jpg, id=915, 893.58844pt x 528.47438pt>
+<fig/art-grafburndown1.jpg, id=912, 893.58844pt x 528.47438pt>
 File: fig/art-grafburndown1.jpg Graphic file (type jpg)
 <use fig/art-grafburndown1.jpg>
 Package pdftex.def Info: fig/art-grafburndown1.jpg  used on input line 156.
@@ -1739,7 +1763,7 @@ Overfull \hbox (5.7754pt too wide) in paragraph at lines 156--157
  [] 
  []
 
-<fig/art-grafburndown2.jpg, id=916, 891.33pt x 514.17094pt>
+<fig/art-grafburndown2.jpg, id=913, 891.33pt x 514.17094pt>
 File: fig/art-grafburndown2.jpg Graphic file (type jpg)
 <use fig/art-grafburndown2.jpg>
 Package pdftex.def Info: fig/art-grafburndown2.jpg  used on input line 166.
@@ -1976,7 +2000,7 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 
 [35])) (txt/main/PRINCIPAL/70-DETALHES.tex
 (txt/main/PRINCIPAL/72-DETALHES-PDAS.tex
-<fig/det-msginicio.jpg, id=938, 165.61874pt x 165.61874pt>
+<fig/det-msginicio.jpg, id=935, 165.61874pt x 165.61874pt>
 File: fig/det-msginicio.jpg Graphic file (type jpg)
 <use fig/det-msginicio.jpg>
 Package pdftex.def Info: fig/det-msginicio.jpg  used on input line 47.
@@ -2039,7 +2063,7 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.54834pt}.
 
 [36]
-<fig/det-sub.jpg, id=947, 165.61874pt x 165.61874pt>
+<fig/det-sub.jpg, id=944, 165.61874pt x 165.61874pt>
 File: fig/det-sub.jpg Graphic file (type jpg)
 <use fig/det-sub.jpg>
 Package pdftex.def Info: fig/det-sub.jpg  used on input line 100.
@@ -2084,7 +2108,7 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.54834pt}.
 
 [38 <./fig/det-sub.jpg>]
-<fig/det-dec.jpg, id=974, 165.61874pt x 165.61874pt>
+<fig/det-dec.jpg, id=971, 165.61874pt x 165.61874pt>
 File: fig/det-dec.jpg Graphic file (type jpg)
 <use fig/det-dec.jpg>
 Package pdftex.def Info: fig/det-dec.jpg  used on input line 178.
@@ -2112,7 +2136,7 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.54834pt}.
 
 [39]
-<fig/det-pro.jpg, id=982, 165.61874pt x 165.61874pt>
+<fig/det-pro.jpg, id=979, 165.61874pt x 165.61874pt>
 File: fig/det-pro.jpg Graphic file (type jpg)
 <use fig/det-pro.jpg>
 Package pdftex.def Info: fig/det-pro.jpg  used on input line 215.
@@ -2223,7 +2247,7 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.54834pt}.
 
 [44]
-<fig/det-eventofinal.jpg, id=1028, 165.61874pt x 165.61874pt>
+<fig/det-eventofinal.jpg, id=1025, 165.61874pt x 165.61874pt>
 File: fig/det-eventofinal.jpg Graphic file (type jpg)
 <use fig/det-eventofinal.jpg>
 Package pdftex.def Info: fig/det-eventofinal.jpg  used on input line 408.
@@ -2234,7 +2258,7 @@ Overfull \hbox (7.79106pt too wide) in paragraph at lines 408--408
  []
 
 ) (txt/main/PRINCIPAL/74-DETALHES-SPRINT.tex
-<fig/det-sinalinicio.jpg, id=1031, 165.61874pt x 165.61874pt>
+<fig/det-sinalinicio.jpg, id=1028, 165.61874pt x 165.61874pt>
 File: fig/det-sinalinicio.jpg Graphic file (type jpg)
 <use fig/det-sinalinicio.jpg>
 Package pdftex.def Info: fig/det-sinalinicio.jpg  used on input line 33.
@@ -2413,7 +2437,7 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.54834pt}.
 
 [50]
-<fig/det-sinalfinal.jpg, id=1089, 165.61874pt x 165.61874pt>
+<fig/det-sinalfinal.jpg, id=1086, 165.61874pt x 165.61874pt>
 File: fig/det-sinalfinal.jpg Graphic file (type jpg)
 <use fig/det-sinalfinal.jpg>
 Package pdftex.def Info: fig/det-sinalfinal.jpg  used on input line 260.
@@ -2756,7 +2780,7 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 
 [64
 
-]) (txt/main/AFAZERES.tex
+])
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
 (fancyhdr)                Make it at least 75.54834pt, for example:
@@ -2764,7 +2788,7 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.54834pt}.
 
-[65])
+[65] (main.bbl)
 
 Package fancyhdr Warning: \headheight is too small (75.0pt): 
 (fancyhdr)                Make it at least 75.54834pt, for example:
@@ -2773,16 +2797,6 @@ Package fancyhdr Warning: \headheight is too small (75.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.54834pt}.
 
 [66
-
-] (main.bbl)
-
-Package fancyhdr Warning: \headheight is too small (75.0pt): 
-(fancyhdr)                Make it at least 75.54834pt, for example:
-(fancyhdr)                \setlength{\headheight}{75.54834pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.54834pt}.
-
-[67
 
 ] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
@@ -2796,13 +2810,13 @@ L3 programming layer <2025-12-29>
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 21C76E815DBBB48A5A8241DE6E7411FA;28874.
+(rerunfilecheck)             Checksum: 5E729FAA9B362F4827628DF90040E04D;28685.
  ) 
 Here is how much of TeX's memory you used:
- 18095 strings out of 467871
- 294905 string characters out of 5418376
- 742507 words of memory out of 5000000
- 46300 multiletter control sequences out of 15000+600000
+ 18088 strings out of 467871
+ 294901 string characters out of 5418376
+ 741486 words of memory out of 5000000
+ 46299 multiletter control sequences out of 15000+600000
  650843 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,13n,134p,1177b,601s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2830,8 +2844,8 @@ n/ec/dpi600\ecbx0900.pk> <C:\Users\Ronie\AppData\Local\MiKTeX\fonts/pk/ljfour/j
 knappen/ec/dpi600\ecrm0900.pk> <C:\Users\Ronie\AppData\Local\MiKTeX\fonts/pk/lj
 four/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\Ronie\AppData\Local\MiKTeX\fonts
 /pk/ljfour/jknappen/ec/dpi600\ecbi1200.pk> <C:\Users\Ronie\AppData\Local\MiKTeX
-\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\Ronie\AppData\Local\
-MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1000.pk> <C:\Users\Ronie\AppData\
+\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1000.pk> <C:\Users\Ronie\AppData\Local\
+MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\Ronie\AppData\
 Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Ronie\Ap
 pData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Ro
 nie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Us
@@ -2846,9 +2860,9 @@ nts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Ronie/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ronie/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/Ronie/AppData/
 Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (67 pages, 1428782 bytes).
+Output written on main.pdf (66 pages, 1429152 bytes).
 PDF statistics:
- 1956 PDF objects out of 2073 (max. 8388607)
- 287 named destinations out of 1000 (max. 500000)
- 1116 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1947 PDF objects out of 2073 (max. 8388607)
+ 283 named destinations out of 1000 (max. 500000)
+ 1100 words of extra memory for PDF output out of 10000 (max. 10000000)
 
